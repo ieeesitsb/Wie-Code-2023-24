@@ -3,7 +3,9 @@ html{
     font-size:50%;
     box-sizing:border-box;
     font-family: 'Arimo', sans-serif !important;
-    background-color: #1e1e32;
+    /* background-color: #1e1e32; */
+    background-color: #1F1B2B;
+
 }
 
 body{
@@ -12,7 +14,7 @@ body{
 }
 .header-list ul{
     margin:0;
-  }
+}
 h1{
     margin: 0;
     padding:0;

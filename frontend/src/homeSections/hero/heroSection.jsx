@@ -1,10 +1,19 @@
 import React from 'react'
-import HeroGif from '../../assets/videos/heroGif.gif'
+import '../hero/heroSection.css'
+import HeroGif from '../../assets/videos/heroGif2.gif'
 function HeroSection() {
   return (
-    <div>
-        <img src={HeroGif}></img>
-        
+    <div className='hero-main-container'>
+        <div className='hero-text-container'>
+
+        </div>
+        <div className='hero-gif-container'>
+            <div className='hero-gif-sub-container'>
+                <img className='hero-gif' src={HeroGif}></img>
+
+            </div>
+        </div>
+
     </div>
   )
 }
