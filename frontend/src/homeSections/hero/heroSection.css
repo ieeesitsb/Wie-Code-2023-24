@@ -1,19 +1,42 @@
-.hero-main-container{
+.hero-main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    
+
 }
 
-.hero-text-container{
+.hero-text-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 55%;
 }
 
-.hero-gif-container{
+.hero-text-container span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 9em;
+    letter-spacing: 0.8rem;
+}
+
+.hero-text-container.hero-year {
+    font-size: 14rem;
+    width: 100%;
+    color: #F02828;
+}
+
+.hero-text-container.organized-text {
+    font-size: 4rem;
+    width: 100%;
+}
+
+
+.hero-gif-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,15 +45,96 @@
     background-size: cover;
 }
 
-.hero-gif-sub-container{
-    /* background-image: url("../../assets/images/redGlowImage.png"); */
+.hero-gif-sub-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}   
-.hero-gif{
+}
+
+.hero-gif {
     width: 100%;
     height: 100%;
+}
+
+.event-details {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../assets/images/backgroundImage1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.event-title{
+    color: #FFFFFF;
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+}
+.event-det-first{
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+.event-det-second{
+    height: 33%;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event-det-date {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 50%;
+    margin-left: 8rem;
+    padding-top: 2rem;
+}
+
+.event-det-date-second {
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 50%;
+    margin-left: 8rem;
+    padding-top: 0rem;
+}
+
+.event-det-date span{
+    font-size: 5rem;
+    width: 100%;
+}
+
+.event-det-date .event-heading{
+    color: #C72039;
+    font-size: 3rem;
+}
+
+.event-det-date .event-desc{
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+.event-det-date-second .event-heading{
+    color: #C72039;
+    font-size: 3rem;
+}
+
+.event-det-date-second .event-desc{
+    color: #FFFFFF;
+    font-size: 3rem;
 }
