@@ -7,19 +7,14 @@ import cardData from './data';
 const Domains = () => {
     return (
     <div className='card-container'>
-        {cardData.map((key,index) => {
-            {console.log(key)}
-            return(
-                <div key={index}>
-                    <Cards
-                    key = {key.id}
-                    url={key.url}
-                    text={key.text}
-                    desc={key.desc}
-                    />
-                </div>
-            )
-        })}
+        {cardData.map((domain) => (
+        <Cards
+        key = {domain.id}
+        url={domain.url}
+        text={domain.text}
+        desc={domain.desc}
+        />
+        ))}
     </div>
     );
 };
