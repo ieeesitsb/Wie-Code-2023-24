@@ -23,7 +23,7 @@
 
 .top{
     position: absolute;
-    top:5px;
+    top:0px;
     width: 200px;
     height: 200px;
     transition: 1s;
@@ -34,8 +34,8 @@
 }
 
 img{
-    width: 55%;
-    height: 55%;
+    width: 60%;
+    height: 60%;
     object-fit: cover;
 }
 
