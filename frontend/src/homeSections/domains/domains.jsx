@@ -1,10 +1,7 @@
 import React from 'react'
-import Cards from './card/Cards'
+import Cards from './Cards'
 import './domains.css'
-import innovation from '../../assets/images/innovation.png'
-import healthCare from '../../assets/images/healthcare.png'
-
-
+import test from '../../assets/images/eight.png'
 import cardData from './data'; 
 
 const domains = () => {
@@ -13,7 +10,7 @@ const domains = () => {
         {cardData.map((domain) => (
         <Cards
         key = {domain.id}
-        url={innovation}
+        url={test}
         text={domain.text}
         desc={domain.desc}
         />
