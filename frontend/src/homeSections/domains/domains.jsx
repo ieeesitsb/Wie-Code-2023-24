@@ -10,7 +10,7 @@ const Domains = () => {
         {cardData.map((domain) => (
         <Cards
         key = {domain.id}
-        url={test}
+        url={domain.url}
         text={domain.text}
         desc={domain.desc}
         />
