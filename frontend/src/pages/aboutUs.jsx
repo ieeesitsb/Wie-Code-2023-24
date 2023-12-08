@@ -1,72 +1,18 @@
 import React, { useState } from 'react'
-// import Footer from './Footer';
-import { Link } from "react-router-dom";
+// import Footer from '../components/footer/footer';
+import Header from '../components/header/header';
 
-// import ieee from "../assets/images/logos/IEEE-WHITE.png";
-// import ieeeBlr from "../assets/images/logos/ieee-blr.png"
-// import wieLogo from "../assets/images/logos/WIELogo-removebg-preview.png"
-
-import { RxHamburgerMenu } from "react-icons/rx"
-import { FaTimes } from "react-icons/fa"
 
 import "../css/aboutUs.css";
 
 export default function AboutUs() {
 
-    const [showNavLinks, setshowNavLinks] = useState(false)
+    
 
     return (
         <div className='about'>
+            <Header />
             <div className="about-main-container">
-                <div className="home-navabar-wrapper">
-                    <div className="home-navabar-container">
-                        {/* <div className="home-wie-logo-container">
-                            <img src={ieee} className="img1" alt="" />
-                            <img src={ieeeBlr} className="img1" alt="" />
-                            <img src={wieLogo} className="img2" alt="" />
-                        </div> */}
-                        <ul
-
-                            className={showNavLinks ? "mobile-navbar" : ''}>
-                            <li><Link to="/"><p>Home</p></Link></li>
-                            <li><Link to="/registration"><p>Registration</p></Link></li>
-                            <li><Link to="/about"><p>About Us</p></Link></li>
-                            <li><Link to="/contact"><p>Contact Us</p></Link></li>
-
-                        </ul>
-                        {/* <div className="home-hamburger">
-                                <button
-                                    onClick={()=>setshowNavLinks(true)}
-                                >{showNavLinks?
-                                    <FaTimes size={30} color="#fff"/>
-                                :
-                                    
-                                    <RxHamburgerMenu size={30} color="#fff"/>}
-                                </button>
-                            </div> */}
-                    </div>
-                    {/* <div className="mobile-nav-bar">
-                        <ul
-
-                            className={showNavLinks ? "mobile-navbar" : 'display-none'}>
-                            <li><Link to="/"><p>Home</p></Link></li>
-                            <li><Link to="/registration"><p>Registration</p></Link></li>
-                            <li><Link to="/about"><p>About Us</p></Link></li>
-                            <li><Link to="/contact"><p>Contact Us</p></Link></li>
-
-                        </ul>
-                        <div className="home-hamburger">
-                            <button
-                                onClick={() => setshowNavLinks(!showNavLinks)}
-                            >{showNavLinks ?
-                                <FaTimes size={40} color="#fff" />
-                                :
-                                <RxHamburgerMenu size={40} color="#fff" />}
-                            </button>
-                        </div>
-                    </div> */}
-                </div>
-
                 <div className="about-paras-container">
                     <div className="about-para-container">
                         <div className="about-para-heading-container">
