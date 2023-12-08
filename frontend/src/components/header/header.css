@@ -1,9 +1,10 @@
 .header-main-container{
     height: 8.5vh;
     width: 100%;
+    
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap'); */
 
 * {
     margin: 0;
@@ -13,7 +14,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
 li {
@@ -64,11 +65,7 @@ a {
 .nav-link:hover{
     color: #F02828;
 }
-.nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-}
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -107,4 +104,24 @@ a {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+.ieee-logo{
+    max-height: 6rem;
+  max-width: 8rem;
+  margin-right: 5rem;   
+}
+.wie-logo {
+  max-height: 6rem; 
+  max-width: 6rem;
+  margin-right: 5rem; 
+}
+.ieeeblr-logo{
+    max-height: 6rem;
+  max-width: 11rem;
+  margin-right: 5rem;
+}
+.three-logo{
+    display: flex;
+    align-items:start;
 }
