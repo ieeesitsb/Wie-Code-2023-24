@@ -1,0 +1,9 @@
+.card-container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 200px;
+}
