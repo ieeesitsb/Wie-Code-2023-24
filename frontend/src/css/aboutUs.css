@@ -25,7 +25,7 @@
     border-radius: 1rem;
     box-shadow: 0 10px 20px rgb(0 0 0 / 0.5);
     padding: 2rem 3rem;
-    background-color: rgba(215, 218, 220, 0.4);
+    background-color: FFA732;
     margin: 3rem 0;
 }
 
@@ -38,7 +38,7 @@
     font-weight: 400;
     letter-spacing: 1rem;    /* background-image: url("../assets/images/both.png"); */
 
-    color: #7ADFD1;
+    color: #F02828;
 }
 
 .about .about-main-container .about-paras-container .about-para-container .about-para-container{
