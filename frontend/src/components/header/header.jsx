@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import '../header/header.css';
-
 function Header() {
   useEffect(() => {
     const hamburger = document.querySelector(".hamburger");
