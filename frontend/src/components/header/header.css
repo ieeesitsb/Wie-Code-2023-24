@@ -116,5 +116,6 @@ a {
 }
 .three-logo{
     display: flex;
-    align-items:start;
+    align-items:start;  
+    
 }
