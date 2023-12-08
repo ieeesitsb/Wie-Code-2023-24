@@ -4,7 +4,7 @@ import './domains.css'
 import test from '../../assets/images/eight.png'
 import cardData from './data'; 
 
-const domains = () => {
+const Domains = () => {
     return (
     <div className='card-container'>
         {cardData.map((domain) => (
@@ -18,4 +18,4 @@ const domains = () => {
     </div>
     );
 };
-export default domains
+export default Domains
