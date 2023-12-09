@@ -11,7 +11,6 @@
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
-    text-shadow: 0 0 50px rgba(16, 0, 0, 0.8);
 }
 
 .container:hover{
@@ -33,9 +32,9 @@
 
 }
 
-img{
-    width: 60%;
-    height: 60%;
+.dom-img{
+    width: 55%;
+    height: 55%;
     object-fit: cover;
 }
 
@@ -78,5 +77,4 @@ img{
     border-radius: 5px;
     color: white;
     box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
-    text-shadow: 0 0 50px rgba(16, 0, 0, 0.8);
 }

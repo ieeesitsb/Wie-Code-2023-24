@@ -1,7 +1,6 @@
 import React from 'react'
 import Cards from './Cards'
 import './domains.css'
-import test from '../../assets/images/three.png'
 import cardData from './data'; 
 
 const Domains = () => {
