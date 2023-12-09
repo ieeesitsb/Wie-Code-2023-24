@@ -16,7 +16,7 @@ const DomainDesc = () => {
           <h1>{text}</h1>
           <p>{desc}</p>
         </div>
-        <img src={Desgif} />
+        <img className="imaage"src={Desgif} />
       </div>
     </>
   )
