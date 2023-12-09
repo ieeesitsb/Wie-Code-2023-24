@@ -5,7 +5,7 @@ import youtube from '../../assets/images/contact/youtube.webp'
 import email from '../../assets/images/contact/email.webp'
 import blog from '../../assets/images/contact/blog.webp'
 import telegram from '../../assets/images/contact/telegram3.png'
-import { TbBrandTelegram } from 'react-icons/tb';
+import { TbBrandTelegram } from 'react-icons/ai';
 
 
 export default function Footer() {
