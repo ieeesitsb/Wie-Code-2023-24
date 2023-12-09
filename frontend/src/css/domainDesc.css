@@ -1,4 +1,5 @@
 .main-container{
+    min-height: 92vh;
     display: flex;
     justify-content: center;
     background: rgb(127,10,30);
@@ -14,9 +15,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:3rem;
-    padding: 80px 55px;
+    gap:5rem;
+    padding: 60px 55px;
     margin: 50px;
+    line-height: 3rem;
 }
 
 .imaage{
