@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
+    background-color: #1E1B36;
     /* background-image: url("../../assets/images/bg.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,7 +129,7 @@
 }
 
 .hero-gif-container {
-    background-image: url('../../assets/images/redGlowImage.png');
+    /* background-image: url('../../assets/images/redGlowImage.png'); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,11 +145,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-image: url('../../assets/images/redGlowImage.png'); */
 }
 
 .hero-gif {
     width: 90%;
     height: 90%;
+    border-radius: 10px;
+
 }
 
 .event-details {
