@@ -1,3 +1,22 @@
+.domain-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.dom-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px 0px 30px;
+}
+.dom-heading h1{
+    font-family: Quantico,sans-serif;
+    font-size: 55px;
+    color: red;
+}
+
+
+
 .card-container{
     position: relative;
     display: flex;
