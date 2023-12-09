@@ -1,10 +1,12 @@
 .content_div1{
     color: white ;
     margin-top: 40px;
-    background-color: #1E1E32;
-  background-image: url("../assets/images/backgroundImage.svg");
-  background-repeat:no-repeat ;
-  background-size: cover;
+    /* background-color: #1E1E32; */
+    /* background-image: url("../assets/images/backgroundImage.svg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 700px;
+    width: 100%; */
     }
     .content_div1 h1{
       font-weight: 80;
@@ -15,9 +17,12 @@
       text-align: left;
       display: block;
       padding: 6px;
+      font-weight: 20px;
+      font-size: large;
     }
     .create text{
       padding-bottom: 6px;
+      font-size: medium;
     }
     .create {
       color: white ;
@@ -41,11 +46,16 @@
       color: #fff;
       border: none;
       padding: 15px 0;
-      border-radius: 8px;
+      border-radius: 0;
       cursor: pointer;
       width: 150px;
       display: inline-block;
       font-weight: 700;
       letter-spacing: 0.25rem;
-    
-    }
+      clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 50%, 80% 100%, 20% 100%, 0 100%, 0 46%);
+}
+.a:hover{
+     color: #fff;
+    letter-spacing: 4px;
+  
+  }
