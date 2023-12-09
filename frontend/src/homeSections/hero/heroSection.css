@@ -3,7 +3,10 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-
+    /* background-image: url("../../assets/images/bg.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter:initial;
 }
 
 .hero-text-container {
@@ -28,6 +31,10 @@
 
 .hero-text-container.hero-wie-code span{
     width: 100%;
+    /* display: flex; */
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
 }
 .hero-text-container.hero-wie-code::before{
     content: attr(data-attr);
@@ -36,34 +43,29 @@
     width: 10px;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 2px solid #ffff;
-    animation: animatetype 5s linear 1 forwards;
-    filter: drop-shadow(0 0 10px #afadad)drop-shadow(0 0 50px #979696);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    /* border-right: 2px solid #ffff; */
+    animation: animatetype 5s linear infinite;
+    filter: drop-shadow(0 0 10px #7a7979)drop-shadow(0 0 50px #5c5a5a);
 }
 
-.hero-text-container.hero-wie-code::after{
-    /* content: attr(data-attr);
-    position: absolute; */
-    color: #FFFFFF;
-    /* width: 10px; */
-    /* overflow: hidden; */
-    /* white-space: nowrap; */
-    filter: drop-shadow(0 0 10px #afadad)drop-shadow(0 0 50px #979696);
-}
 .hero-text-container.hero-year {
     position: relative;
     font-size: 12rem;
     width: 100%;
-    color: rgba(240, 40, 40, 0.2);
+    /* color: rgba(240, 40, 40, 0.2); */
+    color: #C52928;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* opacity: 0.2; */
     letter-spacing: 0.8rem;
 }
 
-.hero-text-container.hero-year::before {
+/* .hero-text-container.hero-year::before {
     content: attr(data-info);
     position: absolute;
     font-size: 12rem;
@@ -79,24 +81,33 @@
     border-right: 4px solid #ffff;
     animation: animatetype 5s linear infinite;
     filter: drop-shadow(0 0 10px #afadad)drop-shadow(0 0 50px #979696);
-}
+} */
 
 @keyframes animatetype{
-    0%,10%,100%{
+    0%,10%{
         width: 0;
     }
     70%,90%{
         width: 100%;
     }
+    100%{
+        border-right: 0px;
+
+    }
         
 }
 
+.hero-text-container.organized-text{
+    width: 100%;
+    text-align: center;
+}
 .hero-text-container.organized-text span{
     font-size: 4rem;
     width: 100%;
     -webkit-box-reflect: below 1px linear-gradient(transparent,rgba(255, 255, 255,0.1));
+    color: #ffff;
     line-height: 0.9em;
-    animation: animate 5s linear infinite;
+    /* animation: animate 5s linear infinite; */
 
 }
 
@@ -123,7 +134,7 @@
     align-items: center;
     width: 45%;
     height: 100%;
-    background-size: cover;
+    background-size:auto;
     mix-blend-mode:lighten;
 }
 
