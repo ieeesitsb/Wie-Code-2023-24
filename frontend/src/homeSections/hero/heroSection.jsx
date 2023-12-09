@@ -2,7 +2,8 @@ import React from 'react'
 import '../hero/heroSection.css'
 import HeroGif from '../../assets/videos/heroGif2.gif'
 import EventDetails from '../../assets/images/details.svg'
-import EventDetails1 from '../../assets/images/backgroundImage.svg'
+import EventDetails1 from '../../assets/images/eventDetailslogo.png'
+import EventDetails2 from '../../assets/images/1.png'
 import IdeaImage from '../../assets/images/idea.png'
 import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
 
@@ -51,7 +52,7 @@ function HeroSection() {
           </div>
         </div>
         <div className='event-det-second'>
-          <img src={EventDetails}></img>
+          <img src={EventDetails2}></img>
         </div>
         <div className='event-det-first'>
           <div className='event-det-date-second'>
