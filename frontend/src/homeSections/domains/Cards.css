@@ -33,11 +33,11 @@
 
 }
 
-img{
+/* img{
     width: 60%;
     height: 60%;
     object-fit: cover;
-}
+} */
 
 .container:hover > .top{
     top:-100px;
