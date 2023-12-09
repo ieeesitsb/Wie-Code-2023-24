@@ -34,12 +34,14 @@
   .label1{
     margin-left: 25%;
     margin-right: 5rem;
-  
+    
   }
   
   .label1 input,
   .label2 input {
     padding: 15px; 
+    border-color: aliceblue;
+    
     font-size: 1.3vw; 
     height: 10vh; 
     color: rgb(246, 248, 251);
@@ -56,6 +58,7 @@
     color: aliceblue;
     font-size: 2rem;
     background-color: transparent;
+    border-color: aliceblue;
   }
   
   .right{

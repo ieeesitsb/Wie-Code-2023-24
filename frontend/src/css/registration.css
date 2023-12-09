@@ -1,0 +1,51 @@
+.content_div1{
+    color: white ;
+    margin-top: 40px;
+    background-color: #1E1E32;
+  background-image: url("../assets/images/backgroundImage.svg");
+  background-repeat:no-repeat ;
+  background-size: cover;
+    }
+    .content_div1 h1{
+      font-weight: 80;
+      letter-spacing: .75rem;
+      font-size: 40px;
+    }
+    .create label{
+      text-align: left;
+      display: block;
+      padding: 6px;
+    }
+    .create text{
+      padding-bottom: 6px;
+    }
+    .create {
+      color: white ;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+    }
+    .create input ,.create select{
+      width: 60%;
+      padding: 6px 10px;
+      margin: 10px 0;
+      border: 1px solid #fff;
+      box-sizing: border-box;
+      display: flex;
+    }
+    
+    .create button {
+      background: #F02E28;
+      color: #fff;
+      border: none;
+      padding: 15px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 150px;
+      display: inline-block;
+      font-weight: 700;
+      letter-spacing: 0.25rem;
+    
+    }
