@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import './Cards.css'
-import image from '../../assets/images/backgroundImage.svg'
+
 const Cards = (props) => {
     const {key,url,text,desc,...rest} = props
     console.log(url)
@@ -14,7 +14,7 @@ const Cards = (props) => {
     return (
     <div className='container'>
         <div className='top'>
-            <img src={url} />
+            <img className="dom-img" src={`./domain-images/${url}`}  />
         </div>
         <div className='content'>
             <h2>{text}</h2>

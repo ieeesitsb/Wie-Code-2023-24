@@ -1,3 +1,143 @@
+.main{
+  height: 100vh;
+}
+/* always remember that a parent div must always have height in vh and not in %, the % is used for child div */
+.mid-section{
+  display: flex;
+  flex-direction: row;
+  height: 54vh;
+  width: 100%;
+}
+.left{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.labels {
+  display: flex;
+  flex-direction: row;
+}
+
+.label1,
+.label2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5vw; 
+  
+  width: 30%; 
+  height: 3vh; 
+  margin-top: 10rem;
+  
+  
+}
+.label1{
+  margin-left: 25%;
+  margin-right: 5rem;
+
+}
+
+.label1 input,
+.label2 input {
+  padding: 15px; 
+  font-size: 1.3vw; 
+  height: 10vh; 
+  color: rgb(246, 248, 251);
+  background-color: transparent;
+
+}
+.textareaa{
+  margin-left: 12.5vw;
+  margin-top: 6vw;
+}
+.textareaa textarea{
+  width: 60.5rem;
+  height: 21vh;
+  color: aliceblue;
+  font-size: 2rem;
+  background-color: transparent;
+}
+
+.right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading-part{
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+  width: 100%;
+  margin-top: 10%;
+  
+}
+.heading-span1{
+  
+  font-size: 2.5vw; 
+  /* if text has to be responsive then use vw */
+  color: #F02828;
+  margin-left: 45%;
+}
+.content-span{
+  margin-top: 3vh;
+  width: 50%;
+  margin-left: 20%;
+  font-size: 1vw;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1vh; 
+}
+.inside-span{
+  margin-top: 3%;
+}
+.heading-span{
+  padding-left: 0.5vw;
+  font-size: 2.5vw; 
+  
+  /* if text has to be responsive then use vw */
+  color: aliceblue;
+}
+.footer-part{
+  display: flex;
+  flex-direction: column;
+  height: 37vh;
+  background-image: url(../assets/images/backgroundImage1.svg);
+  background-size: cover;
+  
+}
+.fl{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img{
+  margin-left: 20rem;
+  margin-top:15.5rem;
+  width: 8rem;
+  height: 5rem;
+}
+.logo{
+  width: 30%;
+}
+.names{
+  width: 70%;
+  margin-left: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+.name{
+  margin-top: 15rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  font-size: 1vw;
+}
+
 import React from 'react';
 import '../css/contactUs.css';
 import Header from '../components/header/header';
