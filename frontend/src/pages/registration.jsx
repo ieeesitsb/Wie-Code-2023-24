@@ -18,7 +18,7 @@ function Registration() {
           <option value="select">4</option>
         </select>
         <text>Abstract Formate(must strictly must followed)</text>
-        <button >Abstract</button>
+        <button className='a'>Abstract</button>
       </form>
      
     </div>
