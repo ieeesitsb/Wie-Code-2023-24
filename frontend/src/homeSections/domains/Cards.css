@@ -36,7 +36,7 @@
     width: 55%;
     height: 55%;
     object-fit: cover;
-}
+} */
 
 .container:hover > .top{
     top:-100px;

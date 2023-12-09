@@ -1,136 +1,87 @@
-// import React, { useEffect } from 'react';
-// import '../header/header.css';
-// import ieeelogo from '../../assets/images/IEEE-WHITE.png'
+// Header.jsx
 
-// function Header() {
-//   useEffect(() => {
-//     const hamburger = document.querySelector(".hamburger");
-//     const navMenu = document.querySelector(".nav-menu");
-//     const navLink = document.querySelectorAll(".nav-link");
-
-//     const mobileMenu = () => {
-//       hamburger.classList.toggle("active");
-//       navMenu.classList.toggle("active");
-//     };
-
-//     const closeMenu = () => {
-//       hamburger.classList.remove("active");
-//       navMenu.classList.remove("active");
-//     };
-
-//     hamburger.addEventListener("click", mobileMenu);
-
-//     navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-//     // Cleanup the event listeners when the component unmounts
-//     return () => {
-//       hamburger.removeEventListener("click", mobileMenu);
-//       navLink.forEach(n => n.removeEventListener("click", closeMenu));
-//     };
-//   }, []); // Empty dependency array ensures that this effect runs only once when the component mounts
-
-//   return (
-//     <div className='header-main-container'>
-      
-//         <nav className="navbar">
-//             {/* <a href="#" className="nav-logo">WebDev.</a> */}
-
-//             <img src="../../assets/images/IEEE-WHITE.png" alt="Logo" className="ieee-logo" />
-//             <img src="../../assets/images/ieee-blr.png" alt="Logo" className="ieeeblr-logo" />
-//             <img src="../../assets/images/WIELogo-removebg-preview.png" alt="Logo" className="wie-logo" />
-
-//             <ul className="nav-menu">
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link">Home</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link">Registration</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link">About Us</a>
-//                 </li>
-//                 <li className="nav-item">
-//                     <a href="#" className="nav-link">Contact Us</a>
-//                 </li>
-//             </ul>
-//             <div className="hamburger">
-//                 <span className="bar"></span>
-//                 <span className="bar"></span>
-//                 <span className="bar"></span>
-//             </div>
-//         </nav>
-      
-//     </div>
-//   );
-// }
-
-// export default Header;
-
-
-import React, { useEffect } from 'react';
-import '../header/header.css';
-import ieeelogo from '../../assets/images/IEEE-WHITE.png';
-import ieeeblrLogo from '../../assets/images/ieee-blr.png';
-import wieLogo from '../../assets/images/WIELogo-removebg-preview.png';
+import React from "react";
+import "../header/header.css";
+import ieeelogo from "../../assets/images/IEEE-WHITE.png";
+import ieeeblrLogo from "../../assets/images/ieee-blr.png";
+import wieLogo from "../../assets/images/WIELogo-removebg-preview.png";
+import { Link } from "react-router-dom";
 
 function Header() {
-  useEffect(() => {
+  const mobileMenu = () => {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
-    const navLink = document.querySelectorAll(".nav-link");
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  };
 
-    const mobileMenu = () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-    };
-
-    const closeMenu = () => {
-      hamburger.classList.remove("active");
-      navMenu.classList.remove("active");
-    };
-
-    hamburger.addEventListener("click", mobileMenu);
-
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
-
-    // Cleanup the event listeners when the component unmounts
-    return () => {
-      hamburger.removeEventListener("click", mobileMenu);
-      navLink.forEach(n => n.removeEventListener("click", closeMenu));
-    };
-  }, []); // Empty dependency array ensures that this effect runs only once when the component mounts
+  const closeMenu = () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  };
 
   return (
-    <div className='header-main-container'>
+    <header className="header">
       <nav className="navbar">
         <div className="three-logo">
-          <img src={ieeelogo} alt="IEEE Logo" className="ieee-logo" />
-          <img src={ieeeblrLogo} alt="IEEE BLR Logo" className="ieeeblr-logo" />
-          <img src={wieLogo} alt="WIE Logo" className="wie-logo" />
+          <div className="three-logo-container">
+            <div className="logo-sub">
+              <img src={ieeelogo} alt="IEEE Logo" className="ieee-logo" />
+            </div>
+          </div>
+          <div className="three-logo-container">
+            <div className="logo-sub">
+              <img
+                src={ieeeblrLogo}
+                alt="IEEE BLR Logo"
+                className="ieeeblr-logo"
+              />
+            </div>
+          </div>
+          <div className="three-logo-container">
+            <div className="logo-sub">
+              <div className="logo-wie">
+                <img src={wieLogo} alt="WIE Logo" className="wie-logo" />
+              </div>
+            </div>
+          </div>
         </div>
-
-        <ul className="nav-menu">
-          <li className="nav-item">
-            <a href="#" className="nav-link">Home</a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">Registration</a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">About Us</a>
-          </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">Contact Us</a>
-          </li>
-        </ul>
-        <div className="hamburger">
+        {/* <a href="#" className="nav-logo">WebDev.</a> */}
+        <div className="link-container">
+          <ul className="nav-menu">
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/register" className="nav-link">
+                Registration
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about-us" className="nav-link">
+                About Us
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contactus" className="nav-link">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="hamburger" onClick={mobileMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </div>
       </nav>
-    </div>
+    </header>
   );
 }
 
 export default Header;
+
