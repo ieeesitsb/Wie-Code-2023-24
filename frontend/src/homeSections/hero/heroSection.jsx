@@ -16,7 +16,7 @@ function HeroSection() {
         </div>
         <div className='hero-gif-container'>
           <div className='hero-gif-sub-container'>
-            <img className='hero-gif' src={HeroGif}></img>
+            {/* <img className='hero-gif' src={HeroGif}></img> */}
           </div>
         </div>
       </div>
