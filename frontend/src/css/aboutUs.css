@@ -5,9 +5,9 @@
 .about .about-main-container{
     min-height: 100vh;
     padding: 0 5rem 8rem 5rem;
-    background-image: url("../assets/images/backgroundImage1.svg");
+    background-image: url("../assets/images/1337369.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     flex-direction: column;
 }
