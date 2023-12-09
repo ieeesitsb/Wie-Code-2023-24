@@ -5,7 +5,8 @@
 .about .about-main-container{
     min-height: 100vh;
     padding: 0 5rem 8rem 5rem;
-    background-image: url("../assets/images/backgroundImage1.svg");
+    background: url(../assets/images/contact/blue-textured-backgrounds-download-free-wallpaper-wiki.jpg);
+
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -38,7 +39,7 @@
     font-weight: 400;
     letter-spacing: 1rem;    /* background-image: url("../assets/images/both.png"); */
 
-    color: #F02828;
+    color: #818FB4;
 }
 
 .about .about-main-container .about-paras-container .about-para-container .about-para-container{
