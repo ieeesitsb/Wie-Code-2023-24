@@ -16,7 +16,7 @@ function Registration() {
         </label>
         <input type="text" required/>
         <label>
-          Leader Name(Must be Girl):
+          Leader Name *(Must be girl):
         </label>
         <input type="text" required/>
         <label>Team Size: </label>
@@ -27,10 +27,8 @@ function Registration() {
           <option value="select">4</option>
         </select>
         <text>Abstract Formate(must strictly must followed)</text>
-        {/* <p>CLick here to download Abstract Formate:</p> */}
-        <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Formate  <span>Click here</span></a>
-        {/* <p>CLick here to download PPT Formate: </p> */}
-        <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Formate <span>Click here</span></a>
+        <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format  <span>Click here</span></a>
+        <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format <span>Click here</span></a>
         <button className='a'>Abstract</button>
       </form>
      
