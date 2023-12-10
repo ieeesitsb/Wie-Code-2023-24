@@ -53,7 +53,7 @@
     margin-top: 6vw;
   }
   .textareaa textarea{
-    width: 60.5rem;
+    width: 60rem;
     height: 21vh;
     color: aliceblue;
     font-size: 2rem;
@@ -67,6 +67,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-image: url('../assets/images/likith/new_bg_69@2x.jpg');  
+    background-position: cover;
+    background-repeat: no-repeat; */
+
   }
   .heading-part{
     display: flex;
@@ -107,8 +111,7 @@
     display: flex;
     flex-direction: column;
     height: 37vh;
-    background-image: url(../assets/images/backgroundImage1.svg);
-    background-size: cover;
+  
     
   }
   .fl{

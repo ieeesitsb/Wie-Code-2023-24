@@ -1,0 +1,22 @@
+.sponsorers-title {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+  .element {
+    --line-color:#fff;
+  }
+
+  .sponsorers_header{
+    height: 10vh;
+  }
+
+  .slider-container{
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  .slideshowcontainer{
+    white-space: nowrap;
+  }

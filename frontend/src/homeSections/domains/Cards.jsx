@@ -12,11 +12,11 @@ const Cards = (props) => {
     }
 
     return (
-    <div className='container'>
-        <div className='top'>
+    <div className='card-container'>
+        <div className='card-top'>
             <img className="dom-img" src={`./domain-images/${url}`}  />
         </div>
-        <div className='content'>
+        <div className='card-content'>
             <h2>{text}</h2>
             <button 
             className='expl-btn'
