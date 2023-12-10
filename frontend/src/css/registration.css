@@ -55,7 +55,7 @@
       clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 50%, 80% 100%, 20% 100%, 0 100%, 0 46%);
 }
 .a:hover{
-     color: #fff;
+    color: #fff;
     letter-spacing: 4px;
   
   }

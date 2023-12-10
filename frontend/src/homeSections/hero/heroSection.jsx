@@ -6,7 +6,7 @@ import EventDetails1 from '../../assets/images/eventDetailslogo.png'
 import EventDetails2 from '../../assets/images/1.png'
 import IdeaImage from '../../assets/images/idea.png'
 import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
-
+import GlobeGif from '../../assets/videos/globe.gif'
 function HeroSection() {
   return (
     <div>
@@ -19,7 +19,7 @@ function HeroSection() {
         <div className='hero-gif-container'>
           <div className='hero-gif-sub-container'>
             {/* <img className='hero-gif' src={HeroGif}></img> */}
-            <img className='hero-gif' src={HeroBgGif}></img>
+            <img className='hero-gif' src={GlobeGif}></img>
           </div>
         </div>
       </div>
