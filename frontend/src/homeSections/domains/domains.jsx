@@ -10,6 +10,7 @@ const Domains = () => {
         <div className='dom-heading'>
         <h1>Domains</h1>
         </div>
+        <div className='domain-mini-container'>
         <div className='card-d-container'>
             {cardData.map((domain) => (
             <Cards
@@ -19,6 +20,7 @@ const Domains = () => {
             desc={domain.desc}
             />
             ))}
+        </div>
         </div>
     </div>
     );
