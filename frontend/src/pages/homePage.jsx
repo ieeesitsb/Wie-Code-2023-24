@@ -4,6 +4,7 @@ import Header from '../components/header/header'
 import Domains from '../homeSections/domains/domains'
 import Prizes from '../homeSections/prizes/prizes'
 import Footer from '../components/footer/footer'
+import Sponsorers from '../homeSections/sponsorers/sponsorers'
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         <HeroSection/>
         <Prizes/>
         <Domains />
+        <Sponsorers/>
         <Footer/>
     </div>
   )

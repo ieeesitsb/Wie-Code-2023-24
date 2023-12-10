@@ -1,22 +1,43 @@
-.sponsorers-title {
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+.sponsorers-main-container{
+    /* max-height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sponsorers-heading {
+  font-size: 7rem;
+  color: #92E6FF;
+  letter-spacing: 0.8rem;
+}
+.sponsorers-sub-container{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sponsorer-slider{
+  display: inline-block;
+  width: 100%;
+  height: 80%;
+  padding: 4rem;
+  animation: 5s slide infinite linear; 
+
 }
 
-  .element {
-    --line-color:#fff;
-  }
+.sponsorer-slider img{
+  width: 200px;
+  height: 200px;
+}
 
-  .sponsorers_header{
-    height: 10vh;
+@keyframes slide {
+  from{
+    transform: translateX(0);
   }
+  to{
+    transform: translateX(-100%);
 
-  .slider-container{
-    align-items: center;
-    display:flex;
-    justify-content: center;
-    height: 60vh;
   }
-
-  .slideshowcontainer{
-    white-space: nowrap;
-  }
+}

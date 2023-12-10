@@ -11,12 +11,12 @@ const cardData =[
         text: 'Health Care',
         desc: 'Under the domain "Healthcare", participants are encouraged to devise innovative solutions that bring about significant positive changes in the healthcare sector. Projects in this domain may include the development of cutting-edge medical technologies, digital health platforms, or applications that enhance patient care, streamline healthcare processes, and improve overall health outcomes. The goal is to address pressing healthcare challenges, foster accessibility and create sustainable solutions that make a meaningful impact on individuals and communities. Whether its improving diagnostics, patient communication, or healthcare resource management, participants are challenged to innovate with the potential to transform and optimise healthcare delivery.'
     },
-    { 
-        id: '3',
-        url: 'three.png', 
-        text: 'Open Innovation',
-        desc: 'The Open Innovation domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
-    },
+    // { 
+    //     id: '3',
+    //     url: 'three.png', 
+    //     text: 'Open Innovation',
+    //     desc: 'The Open Innovation domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
+    // },
     { 
         id: '4',
         url: 'four.png', 
@@ -47,6 +47,12 @@ const cardData =[
         text: 'Education',
         desc: 'The Education domain focuses on harnessing innovation and technology to address challenges within the education sector. Participants are encouraged to explore and develop solutions that can have a meaningful impact on access, quality, and inclusivity in education. The domain also invites participants to consider social issues related to education, such as addressing educational disparities, promoting digital literacy, and fostering lifelong learning.Projects may include the creation of innovative e-learning platforms, tools for personalised education, or applications that enhance accessibility for learners with diverse needs.'
     },
+    { 
+        id: '3',
+        url: 'three.png', 
+        text: 'Open Innovation',
+        desc: 'The Open Innovation domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
+    }
     
 ];
 
