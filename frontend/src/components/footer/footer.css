@@ -1,69 +1,50 @@
-.footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer .footer-main-container{
+.footer-p{
+    height: 5vh;
     background-color: black;
-    padding: 1rem 15rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .footer-main-container .copyright-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer .footer-main-container .icons-container{
-    padding: 0 1rem;
+    color: ivory;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-
-.footer .footer-main-container .icons-container .icon{
-    color: white;
-    font-size: 2.5rem;
+.footer-main-container{
+    background-color: #030E2C;;
 }
-
-.footer .social-container{
-    display: flex;
-    align-items: center;
-}
-
-.footer .footer-main-container .icon-logo{
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    margin: 0 1rem;
-}
-
-.footer .footer-main-container .copyright-text{
+.heading-primary--sub-skyblue{
+    /* margin: 3vh; */
+    color: ivory;
+    padding: 2rem;
     font-size: 2rem;
-    color: white;
-    letter-spacing: 0.1rem;
-    font-family: 'Inconsolata', monospace !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width:25em){
-    .footer .footer-main-container .icon-logo .icon{
-        font-size: 6rem;
-    }
+.contact-icons{
 
-    .footer .footer-main-container .copyright-text{
-        font-size: 5rem;
-    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
 }
 
-@media only screen and (max-width:20em){
-    .footer .footer-main-container .icon-logo .icon{
-        font-size: 5rem;
-    }
+/* .contact-icons .con-icons i{
+    color: ivory;
+    height: 4.5vh;
+width: 4.5vh;
+} */
+.con-icons{
+/* border: 1px red solid; */
+margin: 1vh;
+height: 4.55vh;
+width: 4.5vh;
+transition: all .3s ease;
+/* mix-blend-mode:color-dodge; */
+}
 
-    .footer .footer-main-container .copyright-text{
-        font-size: 4rem;
-    }
+/* img{
+    width: 4.5vh;
+    height: 4.5vh;
+} */
+.con-icons:hover{
+    transform: scale(1.2);
 }

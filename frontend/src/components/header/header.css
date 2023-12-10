@@ -3,9 +3,9 @@
     width: 100%;
     
 }
-.header{
+/* .header{
     border-bottom: 1px solid #E2E8F0;
-}
+} */
 .three-logo{
     width: 50%;
     height: 100%;
@@ -81,7 +81,7 @@
 }
 
 .nav-link:hover{
-    color: #C2D9FF;
+    color: #92E6FF;
     text-shadow: 0 0 10px rgba(194, 217, 255, 0.8);
 }
 
@@ -118,6 +118,7 @@
     .hamburger {
         display: block;
         cursor: pointer;
+        padding-right: 10px;
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
