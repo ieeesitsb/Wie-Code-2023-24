@@ -42,6 +42,7 @@ function HeroSection() {
 
 
 {/* Details of the event  */}
+
       <div className='event-details'>
       <span className='event-title'>DETAILS OF <span style={{color: "#39A7FF"}}> WIE</span>  CODE 2023</span> 
         <div className='event-det-first'>
