@@ -1,26 +1,29 @@
-.container{
+.card-container{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 250px;
     height: 270px;
-    /* background-color: #3E1F30; */
-    background-color: #482235;
+    /* background-color: #190482 rgb(25, 4, 130); */
+    /* background-color: rgb(142, 143, 250); */
+    background-color: rgba(59, 40, 128, 0.4);
     border-radius: 20px;
     transition: 0.5s;
     cursor: pointer;
-    box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+    box-shadow: 0 29px 52px rgba(18, 17, 17, 0.4), 0 25px 16px rgba(0,0,0,0.20);
+    /* animation: slideUp 1s  ease-in; */
 }
 
-.container:hover{
-    /* height: 350px; */
-    background-color: #1E1E32;
-    border: 1px solid red;
+.card-container:hover{
+    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%); */
+    background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%);
+    /* background-color: black; */
+    border: 1px solid lightblue;
     border-top: none;
 } 
 
-.top{
+.card-top{
     position: absolute;
     top:0px;
     width: 200px;
@@ -36,15 +39,15 @@
     width: 55%;
     height: 55%;
     object-fit: cover;
-} */
+} 
 
-.container:hover > .top{
+.card-container:hover > .card-top{
     top:-100px;
     scale: 0.80;
     
 }
 
-.content{
+.card-content{
     position: absolute;
     top:200px;
     width: 100%;
@@ -52,17 +55,17 @@
     overflow: hidden;
     text-align: center;
     transition: 1s;
-    color: #F02828;
-    /* color: aliceblue; */
-}
-
-.container:hover > .content{
-    top: 100px;
-    height: 250px;
+    /* color: #190482; */
     color: white;
 }
 
-.content h2{
+.card-container:hover > .card-content{
+    top: 100px;
+    height: 250px;
+    color:lightblue ;
+}
+
+.card-content h2{
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
@@ -71,10 +74,26 @@
 .expl-btn{
     cursor: pointer;
     margin-top:40px;
-    padding: 10px;
-    border: 1px solid red;
-    background-color: #3E1F30;
+    font-size: 15px;
+    padding: 10px 15px;
+    border: 1px solid lightblue;
+    background-color: lightblue;
     border-radius: 5px;
-    color: white;
-    box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+    color: black;
+    box-shadow: 0 29px 80px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+    transition: all 0.5s;
 }
+
+.expl-btn:hover{
+    background-color: rgb(195, 223, 233);
+    scale: 1.05;
+}
+
+/* @keyframes slideUp {
+    from {
+        transform: translateY(30px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+} */
