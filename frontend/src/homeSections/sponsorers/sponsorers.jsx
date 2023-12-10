@@ -1,43 +1,36 @@
 import React from 'react'
 import '../sponsorers/sponsorers.css'
 
-function Sponsorers() {
-    return (
-        <div className="sponsorers-text container">
-            <div className='sponsorers-sponsership icons-container'>
+function sponsorers() {
+    return(
+        
+        <div className='sponsorers'>
+            <div id="sponsorers"
+            class="sponsorers_inner container">
+             </div>
+             
+        <div classname='sponsorers_header'>
+            <h2 class="sponsorers-title">
+                <strong> WIE 2023-24 SPONSORED BY</strong> 
+                 </h2>
 
-            </div>
-            <div className='sponsorers'>
-                <div id="sponsorers"
-                    class="sponsorers_inner container">
-                </div>
-
-                <div classname='sponsorers_header'>
-                    <h2 class="title title_medium sponsorers_title">
-                        <strong>SPONSORED BY</strong>
-                    </h2>
-
-                    <div classname="sponsorers_block">
-                        <div class="sponsorers_block-content">
-                            <div class="sponsorers_block-item sponsorers_block_active" data block name="SPONSORED BY"
-                                style="min-height: 430px;">
-                                <div class="sponsorers_block-items-list">
-                                    <div class="sponsorers_block-item-list-item">
-                                        <div class="sponsorers_block-item-list-item-logo-wrapper">
-                                            <img class="sponsorers_block-item-list-item-logo-wrapper"
-                                                src="c:\Users\nayan\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\85233C2F9A018C22EF43ADC45EEF8683\IMG-20231208-WA0044.jpg"
-                                                draggable="false" alt="ns silks" title=''></img>
-                                        </div>
-                                        <h3 class="sponsorers_block-item-list-item-logo-wrapper">NS SILKS & SAREES</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+           <div class="slideshow">
+            <div class="slideshowslider" style="transform:translated(-300%, 0%, 0px);">
+             <a class="slide" ref="noreferrer" 
+             href="ns,silks.jpg" target="_blank">
+                <div class="slider-container">
+                    <img id="computersociety" class="slide-img" alt="slide" src="cseindia.webp"></img>
                     </div>
-                </div>
-            </div>
+                    </a>
+                    <a class="slide" rel="norefferrer" href="https://csiindia.org/" target="_blank">
+                        <div class="slider-container">
+                            <img id="computersociety" class=""  alt="" src="csiindia.webp"></img>
+                        </div>
+                    </a>
+                     </div>
+                     </div> 
+                    </div>        
         </div>
+         
     )
 }
-
-export default Sponsorers
