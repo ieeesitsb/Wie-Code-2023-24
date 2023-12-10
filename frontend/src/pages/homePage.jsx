@@ -9,15 +9,14 @@ import Sponsorers from '../homeSections/sponsorers/sponsorers'
 
 function HomePage() {
   return (
-    
         <div>
-        <Header/>
-        <HeroSection/>
-        <Prizes/>
-        <Domains />
-        <Rules/>
-        <Sponsorers/>
-        <Footer/>
+          <Header/>
+          <HeroSection/>
+          <Prizes/>
+          <Domains />
+          <Rules/>
+          <Sponsorers/>
+          <Footer/>
         </div>
   )
 }
