@@ -11,7 +11,7 @@ function contactUs() {
       <div className='mid-section'>
         <div className='left'>
           
-            <div className='labels'>
+            {/* <div className='labels'>
               <label className='label1' >
                 <input placeholder='Full name' type="text" />
               </label>
@@ -21,7 +21,7 @@ function contactUs() {
             </div> 
             <div className='textareaa'>
               <textarea placeholder='Message' name="" id="" cols="30" rows="10"></textarea>
-            </div>
+            </div> */}
         </div>
         <div className='right'>
           <div className='heading-part'>

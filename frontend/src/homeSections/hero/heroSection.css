@@ -3,7 +3,8 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #030014;
+    /* background-color: #030014; */
+    background-color: #030E2C;
     /* background-image: url("../../assets/images/bg.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55%;
+    width: 50%;
 }
 
 
@@ -32,7 +33,7 @@
 
 .hero-text-container.hero-wie-code span{
     width: 100%;
-    color: rgb(142, 143, 250);
+    color: #92E6FF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +103,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 50%;
     height: 100%;
     background-size:auto;
     mix-blend-mode:lighten;
