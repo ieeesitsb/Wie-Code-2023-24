@@ -39,7 +39,7 @@
     object-fit: cover;
     margin-top: 20px;
     padding: 10px;
-    width: 300px;
+    width: 80%;
 }
 
 @media only screen and (max-width: 900px) {

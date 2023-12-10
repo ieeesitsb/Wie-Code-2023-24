@@ -11,7 +11,7 @@
     border-radius: 20px;
     transition: 0.5s;
     cursor: pointer;
-    box-shadow: 0 29px 52px rgba(63, 63, 63, 0.4), 0 25px 16px rgba(0,0,0,0.20);
+    box-shadow: 0 29px 52px rgba(18, 17, 17, 0.4), 0 25px 16px rgba(0,0,0,0.20);
     /* animation: slideUp 1s  ease-in; */
 }
 
@@ -19,7 +19,8 @@
     /* background: rgb(5,1,19); */
     /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgba(0,0,139,1) 38%); */
     /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(119, 82, 254, 1) 38%); */
-    background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 50%);
+    background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%);
+    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 84, 90) 38%); */
     /* background-color: black; */
     border: 1px solid lightblue;
     border-top: none;
@@ -83,6 +84,12 @@
     border-radius: 5px;
     color: black;
     box-shadow: 0 29px 80px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+    transition: all 0.5s;
+}
+
+.expl-btn:hover{
+    background-color: rgb(195, 223, 233);
+    scale: 1.05;
 }
 
 /* @keyframes slideUp {

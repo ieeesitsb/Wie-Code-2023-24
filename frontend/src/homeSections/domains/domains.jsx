@@ -8,7 +8,7 @@ const Domains = () => {
 
     <div className='domain-container'>
         <div className='dom-heading'>
-        <h1>Domains</h1>
+        <h1>DOMAINS</h1>
         </div>
         <div className='domain-mini-container'>
         <div className='card-d-container'>
