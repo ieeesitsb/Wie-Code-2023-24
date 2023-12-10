@@ -1,6 +1,17 @@
 .domain-container{
+    /* background-color:  #030c26; */
+    background: rgb(34,34,71);
+    background: linear-gradient(196deg, rgba(34,34,71,0.5) 20%, rgba(4,1,17,0.5) 40%, rgba(34,34,71,0.5) 60%, rgba(4,1,17,0.5) 80%, rgba(34,34,71,0.5) 100%);
+}
+
+.domain-mini-container{
     display: flex;
     flex-direction: column;
+    margin: 100px;
+    /* background-color: rgb(3, 14, 44, 0.2); */
+    /* background-color: rgba(5,1,19,0.5); */
+    /* background: rgb(34,34,71);
+    background: linear-gradient(196deg, rgba(34,34,71,0.5) 20%, rgba(4,1,17,0.5) 40%, rgba(34,34,71,0.5) 60%, rgba(4,1,17,0.5) 80%, rgba(34,34,71,0.5) 100%); */
 }
 
 .dom-heading{
@@ -10,25 +21,23 @@
     padding: 50px 0px 0px 30px;
 }
 .dom-heading h1{
-    font-family: Quantico,sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 55px;
-    color: red;
+    color: #7752FE;
 }
 
-
-
-.card-container{
+.card-d-container{
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;    
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 200px;
+    padding: 50px 100px;
 }
 
 @media only screen and (max-width: 600px) {
-    .card-container{
+    .card-d-container{
         padding: 100px 20px;
     }
 }
