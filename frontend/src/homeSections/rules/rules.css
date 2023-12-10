@@ -22,8 +22,6 @@
 }
 .rules-content{
     padding: 0% 2%;
-    position: relative;
-    
 }
 .rules-ul{
     font-size: 20px;
@@ -35,18 +33,12 @@
     list-style-image: url('../../assets/images/target.png');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen {
-    
+@media only screen and (max-width: 480px) {
+    .rules-heading h1{
+        font-weight: 300;
+        font-size: 5rem;
+    }
+    .rules-ul{
+        font-size: 18px;
+    }
 }
