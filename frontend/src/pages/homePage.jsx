@@ -4,16 +4,18 @@ import Header from '../components/header/header'
 import Domains from '../homeSections/domains/domains'
 import Prizes from '../homeSections/prizes/prizes'
 import Footer from '../components/footer/footer'
+import Rules from '../homeSections/rules/rules'
 
 function HomePage() {
   return (
-    <div>
+        <div>
         <Header/>
         <HeroSection/>
         <Prizes/>
         <Domains />
+        <Rules />
         <Footer/>
-    </div>
+        </div>
   )
 }
 

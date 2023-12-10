@@ -1,0 +1,52 @@
+.rules-container{
+    background-color: #030E2C;
+    top:0;
+}
+.rules-mini-container{
+    margin: 8%;
+    background-color: #030E2C;
+}
+
+.rules-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    color:#92E6FF;
+    letter-spacing: 1rem;
+    font-weight: 300;
+}
+.rules-heading h1{
+    font-weight: 300;
+    font-size: 7rem;
+}
+.rules-content{
+    padding: 0% 2%;
+    position: relative;
+    
+}
+.rules-ul{
+    font-size: 20px;
+    gap:2rem;
+}
+.rules-ul li{
+    padding:0.8rem;
+    color:#899CC0;
+    list-style-image: url('../../assets/images/target.png');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen {
+    
+}
