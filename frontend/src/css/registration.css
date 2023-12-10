@@ -64,11 +64,13 @@
     text-decoration: none;
     letter-spacing: 4px;
   }
-  .create p{
+  .create a{
+    color: #fff;
     font-size: medium;
+    letter-spacing: 0.75px;
   }
 
-  .create a{
+  .create a span{
     font-size: 11px;
     color: #C2D9FF;
   }
