@@ -17,14 +17,14 @@ function sponsorers() {
            <div class="slideshow">
             <div class="slideshowslider" style="transform:translated(-300%, 0%, 0px);">
              <a class="slide" ref="noreferrer" 
-             href="C:\Users\nayan\OneDrive\Pictures\ns,silks.jpg" target="_blank">
+             href="ns,silks.jpg" target="_blank">
                 <div class="slider-container">
-                    <img id="computersociety" class="slide-img" alt="slide" src="https://imgs.search.brave.com/h1wsiDY2b34UIb3U37PVwCQi-yVoOJ-xOsZRxcpKzKQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZS5wbmdhYWEuY29t/Lzc1My80NjkwNzUz/LW1pZGRsZS5wbmc"></img>
+                    <img id="computersociety" class="slide-img" alt="slide" src="cseindia.webp"></img>
                     </div>
                     </a>
                     <a class="slide" rel="norefferrer" href="https://csiindia.org/" target="_blank">
                         <div class="slider-container">
-                            <img id="computersociety" class=""  alt="slide" src="/static/media/computer society of india.fa75eca6962cdf862b57.png"></img>
+                            <img id="computersociety" class=""  alt="" src="csiindia.webp"></img>
                         </div>
                     </a>
                      </div>
