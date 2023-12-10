@@ -2,7 +2,7 @@ import React from 'react'
 import '../hero/heroSection.css'
 import HeroGif from '../../assets/videos/heroGif2.gif'
 import EventDetails from '../../assets/images/details.svg'
-import EventDetails1 from '../../assets/images/eventdetailslogo.png'
+// import EventDetails1 from '../../assets/images/eventdetailslogo.png'
 import EventDetails2 from '../../assets/images/1.png'
 import IdeaImage from '../../assets/images/idea.png'
 import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
@@ -16,7 +16,7 @@ function HeroSection() {
       <div className='hero-main-container'>
         <div className='hero-text-container'>
           <span className='hero-text-container hero-wie-code' data-attr="&nbsp;WIE CODE&nbsp;"><span>&nbsp;WIE CODE &nbsp;</span>  </span>
-          <span className='hero-text-container hero-year' data-info="&nbsp;2023&nbsp;"><span>&nbsp; 2023 &nbsp;</span> </span>
+          <span className='hero-text-container hero-year' data-info="&nbsp;2023&nbsp;"><span>&nbsp; 2023-24 &nbsp;</span> </span>
           <span className='hero-text-container organized-text' ><span>&nbsp;Organized by IEEE SIT SB&nbsp;</span> </span>
         </div>
         <div className='hero-gif-container'>
@@ -39,22 +39,22 @@ function HeroSection() {
         <div className='idea-text-container'>
           <span className='idea-theme-title'>THEME</span>
           <span className='idea-theme-desc'>Unleash your creativity for a purpose! This year's hackathon theme is </span>
-          <span className='idea-theme'>INNOVATE FOR IMPACT</span>
+          <span className='idea-theme'>"INNOVATE FOR IMPACT"</span>
         </div>
       </div>
 
       {/* Details of the event  */}
 
       <div className='event-details'>
-        <span className='event-title'>DETAILS OF <span style={{ color: "#39A7FF" }}> WIE</span>  CODE 2023</span>
+        <span className='event-title'>DETAILS OF <span style={{ color: "#00F2FF" }}> WIE</span>  CODE 2023-24</span>
         <div className='event-det-first'>
           <div className='event-det-date'>
             <span className='event-heading'> Date</span>
-            <span className='event-desc'>23drd December</span>
+            <span className='event-desc'>23rd December , 2023</span>
           </div>
           <div className='event-det-date'>
             <span className='event-heading'>Time</span>
-            <span className='event-desc'>8am to 8pm</span>
+            <span className='event-desc'>8:00 A.M to 8:00 P.M</span>
           </div>
         </div>
         <div className='event-det-second'>

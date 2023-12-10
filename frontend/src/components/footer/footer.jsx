@@ -5,12 +5,12 @@ import youtube from '../../assets/images/contact/youtube.webp'
 import email from '../../assets/images/contact/email.webp'
 import blog from '../../assets/images/contact/blog.webp'
 import telegram from '../../assets/images/contact/telegram3.png'
-// import { TbBrandTelegram } from 'react-icons/tb';
+import { TbBrandTelegram } from 'react-icons/tb';
 
 
 export default function Footer() {
     return(
-        <>
+        <div className='footer-main-container'>
             <center className='heading-primary--sub-skyblue'id="contact">FOLLOW US ON</center>
             <div className="contact-icons">
                 <a rel="noreferrer" href="https://www.instagram.com/ieeesitsb/" target="_blank"><img alt="insta" src={instagram} className="con-icons"></img></a>
@@ -23,6 +23,6 @@ export default function Footer() {
             </div>
             <center className='footer-p' style={{"color":"#b7b4b4","marginTop":"2vh"}}>All rights reserved &#169; IdEEEas, IEEE SIT SB</center>
 
-            </>
+            </div>
     );
 }
