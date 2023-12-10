@@ -64,6 +64,9 @@
     text-decoration: none;
     letter-spacing: 4px;
   }
+  .create p{
+    font-size: medium;
+  }
 
   .create a{
     font-size: 11px;
