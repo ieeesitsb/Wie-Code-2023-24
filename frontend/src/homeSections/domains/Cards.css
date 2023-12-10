@@ -16,11 +16,8 @@
 }
 
 .card-container:hover{
-    /* background: rgb(5,1,19); */
-    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgba(0,0,139,1) 38%); */
-    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(119, 82, 254, 1) 38%); */
+    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%); */
     background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%);
-    /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 84, 90) 38%); */
     /* background-color: black; */
     border: 1px solid lightblue;
     border-top: none;
