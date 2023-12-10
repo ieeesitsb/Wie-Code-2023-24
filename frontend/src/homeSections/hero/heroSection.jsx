@@ -9,7 +9,7 @@ import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
 import GlobeGif from '../../assets/videos/globe.gif'
 import EventLogo from '../../assets/images/anagha/event_details_logo_1.png'
 import DetailsLogo from '../../assets/images/anagha/3.png'
-import ThemeImage from '../../assets/images/anagha/themeImage.jpg'
+import ThemeImage from '../../assets/images/anagha/pakka.jpg'
 function HeroSection() {
   return (
     <div>
