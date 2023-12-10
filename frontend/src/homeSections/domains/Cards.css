@@ -17,7 +17,7 @@
 
 .card-container:hover{
     /* background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%); */
-    background: linear-gradient(180deg, rgba(5,1,19,1) 0%, rgb(67, 67, 142) 38%);
+    background: linear-gradient(180deg, rgba(5,1,19,1) 0%, #011053 38%);
     /* background-color: black; */
     border: 1px solid lightblue;
     border-top: none;
@@ -88,12 +88,3 @@
     background-color: rgb(195, 223, 233);
     scale: 1.05;
 }
-
-/* @keyframes slideUp {
-    from {
-        transform: translateY(30px);
-    }
-    to {
-        transform: translateY(0px);
-    }
-} */

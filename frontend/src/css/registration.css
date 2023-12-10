@@ -1,68 +1,82 @@
-.content_div1{
-    color: white ;
-    margin-top: 0px;
-    background: url(../assets/images/_ca58fc64-19d1-4e1e-890b-eaef4d3f0542.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 720px;
-    }
-    .content_div1 h1{
-      margin-top: 15px;
-      font-weight: 300;
-      letter-spacing: 1rem;
-      font-size: 60px;
-      padding-left: 30px;
-    }
-    .create label{
-      text-align: left;
-      display: block;
-      padding: 6px;
-      font-weight: 20px;
-      font-size: large;
-    }
-    .create text{
-      padding-bottom: 6px;
-      font-size: medium;
-    }
-    .create {
-      color: white ;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-     }
-    .create input ,.create select{
-      width: 60%;
-      padding: 6px 10px;
-      margin: 10px 0;
-      border: 1px solid #fff;
-      box-sizing: border-box;
-      display: flex;
-    }
-    
-    .create button {
-      background-image: linear-gradient(to right, #4b6cb7 0%, #182848  51%, #4b6cb7  100%);
-      border: none;
-      margin: 10px;
-      padding: 15px 15px;
-      text-align: center;
-      text-transform: uppercase;
-      transition: 0.5s;
-      background-size: 200% auto;
-      color: white;            
-      box-shadow: 0 0 20px #eee;
-      border-radius: 0px;
-      clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 50%, 80% 100%, 20% 100%, 0 100%, 0 46%);
-      display: inline-block;
-      width: 150px;
-      cursor: pointer;
-      font-weight: 700
+.content_div1 {
+  color: white;
+  margin-top: 0px;
+  background: url(../assets/images/_ca58fc64-19d1-4e1e-890b-eaef4d3f0542.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
 }
-.a:hover{
-     background-position: right center; 
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 4px;
-  }
 
- 
+.content_div1 h1 {
+  margin-top: 15px;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  font-size: 60px;
+  padding-left: 30px;
+}
+
+.create label {
+  text-align: left;
+  display: block;
+  padding: 6px;
+  font-weight: 20px;
+  font-size: large;
+}
+
+.create text {
+  padding-bottom: 6px;
+  font-size: medium;
+}
+
+.create {
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create input,
+.create select {
+  width: 60%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.create button {
+  background-image: linear-gradient(to right, #4b6cb7 0%, #182848 51%, #4b6cb7 100%);
+  border: none;
+  margin: 10px;
+  padding: 15px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 0px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 50%, 80% 100%, 20% 100%, 0 100%, 0 46%);
+  display: inline-block;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 700
+}
+
+.a:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+.create p {
+  font-size: medium;
+}
+
+.create a {
+  font-size: 11px;
+  color: #C2D9FF;
+}
