@@ -1,11 +1,17 @@
 .content_div1{
     color: white ;
-    margin-top: 40px;
+    margin-top: 0px;
+    background: url(../assets/images/_ca58fc64-19d1-4e1e-890b-eaef4d3f0542.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
     }
     .content_div1 h1{
-      font-weight: 80;
-      letter-spacing: .75rem;
-      font-size: 40px;
+      margin-top: 15px;
+      font-weight: 300;
+      letter-spacing: 1rem;
+      font-size: 60px;
+      padding-left: 30px;
     }
     .create label{
       text-align: left;
