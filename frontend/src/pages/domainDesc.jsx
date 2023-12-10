@@ -2,8 +2,7 @@ import React from 'react'
 import '../css/domainDesc.css'
 import { useLocation } from 'react-router-dom'
 import Header from '../components/header/header';
-import Desgif from '../assets/images/smm_panel.svg'
-import hackathon from '../assets/images/hackathon.png'
+import im from '../assets/images/desc-bg.png'
 
 const DomainDesc = () => {
   const location = useLocation();
@@ -18,8 +17,8 @@ const DomainDesc = () => {
           <p>{desc}</p>
         </div>
         <div className='desc-img'>
-          <img className="imaage"src=''/>
-        </div>
+          <img className="imaage"src={im}/>
+        </div>  
       </div>
     </>
   )
