@@ -27,8 +27,8 @@ function Registration() {
           <option value="select">4</option>
         </select>
         <text>Abstract Formate(must strictly must followed)</text>
-        <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format  <span>Click here</span></a>
-        <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format <span>Click here</span></a>
+        <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format   <span>Click here</span></a>
+        <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format  <span>Click here</span></a>
         <button className='a'>Abstract</button>
       </form>
      
