@@ -40,7 +40,6 @@ function HeroSection() {
           </div>
         </div>
 
-
 {/* Details of the event  */}
 
       <div className='event-details'>
