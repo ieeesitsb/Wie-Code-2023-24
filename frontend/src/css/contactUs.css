@@ -80,7 +80,7 @@
     
     font-size: 2.5vw; 
     /* if text has to be responsive then use vw */
-    color: #F02828;
+    color: rgb(142, 143, 250);
     margin-left: 45%;
   }
   .content-span{
