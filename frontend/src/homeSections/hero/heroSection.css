@@ -211,7 +211,8 @@
     justify-content: space-around;
     align-items: center;
     padding: 7rem;
-    /* background-color: #1E1E32; */
+    
+    background-color: #030E2C;
 }
 
 .idea-text-container{
@@ -239,7 +240,7 @@
 }
 .idea-theme{
     font-size: 5rem;
-    color: rgb(119, 82, 254);
+    color: #00F2FF;
     font-weight: bold;
     padding-top: 3rem;
     letter-spacing: 0.8rem;

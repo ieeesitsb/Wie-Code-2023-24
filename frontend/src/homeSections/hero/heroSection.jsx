@@ -9,6 +9,7 @@ import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
 import GlobeGif from '../../assets/videos/globe.gif'
 import EventLogo from '../../assets/images/anagha/event_details_logo_1.png'
 import DetailsLogo from '../../assets/images/anagha/3.png'
+import ThemeImage from '../../assets/images/anagha/themeImage.jpg'
 function HeroSection() {
   return (
     <div>
@@ -27,23 +28,25 @@ function HeroSection() {
       </div>
 
 
-{/* Theme of hackathon */}
-        <div className='idea'>
-          <div className='idea-img-container'>
-            {/* <img src={IdeaImage}></img> */}
-            <img src={DetailsLogo}/>
-          </div>
-          <div className='idea-text-container'>
-            <span className='idea-theme-title'>THEME</span>
-            <span className='idea-theme-desc'>Unleash your creativity for a purpose! This year's hackathon theme is </span>
-            <span className='idea-theme'>INNOVATE FOR IMPACT</span>
-          </div>
-        </div>
+      {/* Theme of hackathon */}
+      <div className='idea'>
+        <div className='idea-img-container'>
+          {/* <img src={IdeaImage}></img> */}
+          {/* <img src={DetailsLogo}/> */}
+          <img src={ThemeImage} />
 
-{/* Details of the event  */}
+        </div>
+        <div className='idea-text-container'>
+          <span className='idea-theme-title'>THEME</span>
+          <span className='idea-theme-desc'>Unleash your creativity for a purpose! This year's hackathon theme is </span>
+          <span className='idea-theme'>INNOVATE FOR IMPACT</span>
+        </div>
+      </div>
+
+      {/* Details of the event  */}
 
       <div className='event-details'>
-      <span className='event-title'>DETAILS OF <span style={{color: "#39A7FF"}}> WIE</span>  CODE 2023</span> 
+        <span className='event-title'>DETAILS OF <span style={{ color: "#39A7FF" }}> WIE</span>  CODE 2023</span>
         <div className='event-det-first'>
           <div className='event-det-date'>
             <span className='event-heading'> Date</span>
