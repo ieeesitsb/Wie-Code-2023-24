@@ -9,6 +9,7 @@ import Sponsorers from '../homeSections/sponsorers/sponsorers'
 
 function HomePage() {
   return (
+    
         <div>
         <Header/>
         <HeroSection/>

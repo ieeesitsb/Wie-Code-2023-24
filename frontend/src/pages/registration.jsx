@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/registration.css'
 import Header from '../components/header/header';
+import Abstract from '../assets/files/WIE_CODE_ABSTRACT_FORMAT.docx'
+import Abstract_ppt from '../assets/files/WIE_CODE_PPT_FORMAT.pptx'
 
 function Registration() {
   return (
@@ -25,8 +27,10 @@ function Registration() {
             <option value="select">4</option>
           </select>
           <text>Abstract Formate(must strictly must followed)</text>
-          <p>CLick here to download Abstract Formate:</p><a href="../assets/files/WIE CODE ABSTRACT FORMAT.docx" download="Abstract.docx">Click here</a>
-          <p>CLick here to download PPT Formate: </p><a href="../assets/files/WIE CODE PPT FORMAT.pptx" download="PPT_formate.pptx">Click here</a>
+          {/* <p>CLick here to download Abstract Formate:</p> */}
+          <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Formate  <span>Click here</span></a>
+          {/* <p>CLick here to download PPT Formate: </p> */}
+          <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Formate <span>Click here</span></a>
           <button className='a'>Abstract</button>
         </form>
 
