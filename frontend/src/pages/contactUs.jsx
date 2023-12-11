@@ -25,24 +25,24 @@ function contactUs() {
       <div className='contact-container'>
         <div className='wie-logo'> <img src={image} alt="" /></div>
         <div className='contact-name'>
-          <span>Kona chandra kiran</span>
-          <span>Ieee chair</span>
-          <span>1234567890</span>
+          <span>Kona Chandra Kiran</span>
+          <span>IEEE Chairman</span>
+          <span>9989794662</span>
         </div>
         <div className='contact-name'>
-          <span>Adarsh Reddy P</span>
-          <span>Ieee  vice chair</span>
-          <span>1234567890</span>
+          <span>Adarsh Reddy P </span>
+          <span>IEEE Vice Chairman</span>
+          <span>9591488158</span>
         </div>
         <div className='contact-name'>
           <span>Chandana R</span>
-          <span>Wie chair</span>
-          <span>1234567890</span>
+          <span>Wie chairman</span>
+          <span>7975720929</span>
         </div>
         <div className='contact-name'>
           <span>Nanditha B U</span>
-          <span>Wie vice chair</span>
-          <span>1234567890</span>
+          <span>Wie Vice Chairman</span>
+          <span>9591619331</span>
         </div>
       </div>
       <Footer />
