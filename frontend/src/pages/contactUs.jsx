@@ -3,7 +3,8 @@ import '../css/contactUs.css';
 import Header from '../components/header/header';
 import image from '../assets/images/WIELogo-removebg-preview.png'
 import Footer from '../components/footer/footer'
-import illustration from '../assets/images/contact.svg'
+// import illustration from '../assets/images/contact.svg'
+import illustration from '../assets/images/desc-bg.png'
 
 
 function contactUs() {
