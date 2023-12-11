@@ -9,6 +9,7 @@ import '../prizes/prizes.css'
 function Prizes() {
   return (
     <div className="prizes-container">
+
       <div className="prize-item">
         <img src={abstract} alt="Prize 1" className="prize-image" />
         <div className="prize-text">
