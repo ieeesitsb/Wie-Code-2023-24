@@ -114,3 +114,69 @@
         margin: 4rem 0;
     }
 }
+
+@media only screen and (max-width:480px){
+    .about .about-main-container .about-paras-container{
+        width:80%;
+        height: auto;
+        align-items: center;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para-heading-container h2{
+        font-size:3rem;
+        padding: 0rem 0.5rem;
+        text-align: center;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para{
+        font-size: 1.5rem;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para-container{
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .about .about-main-container .about-paras-container {
+        margin: 1rem auto;
+        padding: 5rem;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container{
+        padding: 1.5rem 2rem;
+        margin: 3.5rem 0;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    .about .about-main-container .about-paras-container{
+        width:90%;
+        height: auto;
+        align-items: center;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para-heading-container h2{
+        font-size:3rem;
+        padding: 0rem 0.5rem;
+        text-align: center;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para{
+        font-size: 1.25rem;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container .about-para-container{
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .about .about-main-container .about-paras-container {
+        margin: 1rem auto;
+        padding: 5rem;
+    }
+
+    .about .about-main-container .about-paras-container .about-para-container{
+        padding: 1.5rem 2rem;
+        margin: 3.5rem 0;
+    }
+}
