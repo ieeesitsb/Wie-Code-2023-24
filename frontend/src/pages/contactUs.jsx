@@ -13,9 +13,13 @@ function contactUs() {
       <Header />
       <div className='container-one'>
         <div className='container-one-left'>
-          <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
-          <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
-          <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+          <div className='container-one-input'>
+            <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
+            <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
+          </div>
+          <div className='input-text-area'>
+            <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+          </div>
           <button className='sub-btn'>Submit</button>
         </div>
         <div className='container-one-right'>
