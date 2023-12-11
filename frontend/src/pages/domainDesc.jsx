@@ -12,13 +12,17 @@ const DomainDesc = () => {
     <>
       <Header />
       <div className='main-container'>
-        <div className='text-container'>
-          <h1>{text}</h1>
-          <p>{desc}</p>
+        <div className='mini-desc-container'>
+          <div className='text-container'>
+            <div className='text-mini-container'>
+            <h1>{text}</h1>
+            <p>{desc}</p>
+            </div>
+          </div>
+          <div className='desc-img'>
+            <img className="imaage"src={im}/>
+          </div>  
         </div>
-        <div className='desc-img'>
-          <img className="imaage"src={im}/>
-        </div>  
       </div>
     </>
   )
