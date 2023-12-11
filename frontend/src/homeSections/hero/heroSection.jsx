@@ -9,6 +9,7 @@ import IdeaImage from '../../assets/images/idea.png'
 import HeroBgGif from '../../assets/videos/bgHeroGif.gif'
 import GlobeGif from '../../assets/videos/globe.gif'
 import EventLogo from '../../assets/images/anagha/event_details_logo_1.png'
+import EventLogoSmall from '../../assets/images/anagha-requirments/no-lines.png'
 import DetailsLogo from '../../assets/images/anagha/3.png'
 import ThemeImage from '../../assets/images/anagha/pakka.jpg'
 import Fade from 'react-reveal/Fade';
@@ -76,7 +77,9 @@ function HeroSection() {
         <div className='event-det-second'>
           {/* <img src={EventDetails2}></img> */}
           <img src={EventLogo}></img>
-
+        </div>
+        <div className='event-det-second-without-lines'>
+          <img src={EventLogoSmall}></img>
         </div>
         <div className='event-det-first'>
           <div className='event-det-date-second'>

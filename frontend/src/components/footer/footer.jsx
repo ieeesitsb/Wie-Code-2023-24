@@ -4,7 +4,7 @@ import instagram from '../../assets/images/contact/instagram.webp'
 import youtube from '../../assets/images/contact/youtube.webp'
 import email from '../../assets/images/contact/email.webp'
 import blog from '../../assets/images/contact/blog.webp'
-import telegram from '../../assets/images/contact/telegram3.png'
+import telegram from '../../assets/images/anagha-requirments/telegram3.png'
 // import { TbBrandTelegram } from 'react-icons/tb';
 
 

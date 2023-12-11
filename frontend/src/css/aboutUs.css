@@ -83,32 +83,34 @@
     }
 }
 
-@media screen and (max-width:25em){
+@media screen and (max-width:780px){
 
     .about .about-main-container .about-paras-container{
-        width:100%;
+        width:80%;
     }
 
     .about .about-main-container .about-paras-container .about-para-container .about-para-heading-container h2{
-        font-size:8rem;
+        font-size:3rem;
+        padding: 0rem 0.5rem;
+        text-align: center;
     }
 
     .about .about-main-container .about-paras-container .about-para-container .about-para{
-        font-size: 5rem;
+        font-size: 1.5rem;
     }
 
     .about .about-main-container .about-paras-container .about-para-container .about-para-container{
-        margin: 5rem auto;
-        padding: 7rem;
+        margin: 1rem auto;
+        padding: 2rem;
     }
 
     .about .about-main-container .about-paras-container {
-        margin: 5rem auto;
+        margin: 1rem auto;
         padding: 7rem;
     }
 
     .about .about-main-container .about-paras-container .about-para-container{
-        padding: 3rem 7rem;
+        padding: 1rem 0.5rem;
         margin: 4rem 0;
     }
 }
