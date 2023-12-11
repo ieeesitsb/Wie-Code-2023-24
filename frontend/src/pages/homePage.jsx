@@ -8,17 +8,17 @@ import Rules from '../homeSections/rules/rules'
 import Sponsorers from '../homeSections/sponsorers/sponsorers'
 
 function HomePage() {
-  return (
-        <div>
-          <Header/>
-          <HeroSection/>
-          <Prizes/>
-          <Domains />
-          <Rules/>
-          <Sponsorers/>
-          <Footer/>
-        </div>
-  )
+        return (
+                <div>
+                <Header/>
+                <HeroSection/>
+                <Prizes/>
+                <Domains />
+                <Rules/>
+                <Sponsorers/>
+                <Footer/>
+                </div>
+        )
 }
 
 export default HomePage

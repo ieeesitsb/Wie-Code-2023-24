@@ -46,7 +46,7 @@ const Rules = () => {
                     </li>
                     <li>
                     We would consider the first 6 entries for each problem statements for the first round of screening. The WIE Code will begin on 23st December
-                    2023 8:00 AM and will end at 23st December 2023 8:00 PM. Internet facility will be provided for 12 hours.
+                    2023 from 8:00 AM and will end at 23st December 2023 8:00 PM. Internet facility will be provided for 12 hours.
                     </li>
                     <li>
                     Reporting time will be 7:00 am.

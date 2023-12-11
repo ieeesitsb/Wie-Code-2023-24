@@ -9,6 +9,17 @@
   font-size: 7rem;
   color: #92E6FF;
   letter-spacing: 0.8rem;
+  box-sizing: border-box;
+  position: relative;
+}
+.sponsorers-heading::after{
+  content:"";
+  width: 100%;
+  height: .02em;
+  background-color: #92E6FF;
+  position: absolute;
+  bottom: -4px;
+  left:0
 }
 .sponsorers-sub-container{
   display: flex;

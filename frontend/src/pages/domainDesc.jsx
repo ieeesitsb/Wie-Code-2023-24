@@ -2,7 +2,7 @@ import React from 'react'
 import '../css/domainDesc.css'
 import { useLocation } from 'react-router-dom'
 import Header from '../components/header/header';
-import im from '../assets/images/desc-bg.png'
+import im from '../assets/images/anagha-requirments/bulb.png'
 
 const DomainDesc = () => {
   const location = useLocation();
