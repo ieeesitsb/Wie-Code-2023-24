@@ -1,36 +1,35 @@
 import React from 'react'
-import '../sponsorers/sponsorers.css'
+import './sponsorers.css'
+import NSLogo from '../../assets/images/sponsorer/ns,silks.jpg'
+import CSindia from '../../assets/images/sponsorer/computer society of india.png'
 
-function sponsorers() {
-    return(
-        
-        <div className='sponsorers'>
-            <div id="sponsorers"
-            class="sponsorers_inner container">
-             </div>
-             
-        <div classname='sponsorers_header'>
-            <h2 class="sponsorers-title">
-                <strong> WIE 2023-24 SPONSORED BY</strong> 
-                 </h2>
-
-           <div class="slideshow">
-            <div class="slideshowslider" style="transform:translated(-300%, 0%, 0px);">
-             <a class="slide" ref="noreferrer" 
-             href="ns,silks.jpg" target="_blank">
-                <div class="slider-container">
-                    <img id="computersociety" class="slide-img" alt="slide" src="cseindia.webp"></img>
-                    </div>
-                    </a>
-                    <a class="slide" rel="norefferrer" href="https://csiindia.org/" target="_blank">
-                        <div class="slider-container">
-                            <img id="computersociety" class=""  alt="" src="csiindia.webp"></img>
+const logos = [NSLogo,CSindia]
+function Sponsorers() {
+    return (
+        <div className='sponsorers-main-container'>
+            <span className='sponsorers-heading'>SPONSORERS</span>
+            <div className='sponsorers-sub-container'>
+                {logos.map((index,key) => {
+                    return(
+                        <div index={key} className='sponsorer-slider'>
+                            <img src={index}></img>
                         </div>
-                    </a>
-                     </div>
-                     </div> 
-                    </div>        
+                    )
+                }) }
+                
+            </div>
+            {/* <div className='sponsorers-sub-container'>
+                {logos.map((index,key) => {
+                    return(
+                        <div index={key} className='sponsorer-slider'>
+                            <img src={index}></img>
+                        </div>
+                    )
+                }) }
+                
+            </div> */}
         </div>
-         
     )
 }
+
+export default Sponsorers

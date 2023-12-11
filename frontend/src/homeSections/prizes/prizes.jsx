@@ -9,13 +9,7 @@ import '../prizes/prizes.css'
 function Prizes() {
   return (
     <div className="prizes-container">
-      <div className="prize-item">
-        <img src={abstract} alt="Prize 1" className="prize-image" />
-        <div className="prize-text">
-          <p>BEST ABSTRACT</p>
-          <p>2000/-</p>
-        </div>
-      </div>
+      
 
       <div className="prize-item">
         <img src={prize1} alt="Prize 2" className="prize-image" />
@@ -36,7 +30,7 @@ function Prizes() {
       <div className="prize-item">
         <img src={women} alt="Prize 4" className="prize-image" />
         <div className="prize-text">
-          <p>WOMEN TEAM</p>
+          <p>BEST WOMEN TEAM</p>
           <p>5000/-</p>
         </div>
       </div>
@@ -46,6 +40,13 @@ function Prizes() {
         <div className="prize-text">
           <p>BEST YOUNG MINDS</p>
           <p>3000/-</p>
+        </div>
+      </div>
+      <div className="prize-item">
+        <img src={abstract} alt="Prize 1" className="prize-image" />
+        <div className="prize-text">
+          <p>BEST ABSTRACT</p>
+          <p>2000/-</p>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import Abstract_ppt from '../assets/files/WIE_CODE_PPT_FORMAT.pptx'
 function Registration() {
   return (
     <div className='content_div1 '>
-        <Header/>
+      <Header />
       <h1>REGISTER </h1>
       <div  >
       <form className='create '>
