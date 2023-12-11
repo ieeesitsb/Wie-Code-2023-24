@@ -21,16 +21,17 @@
 
 .text-mini-container {
     padding: 50px;
-    background-color: #fff;
-    opacity: 0.4;
+    background-color: rgb(248, 244, 231);
+    opacity: 0.5;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     line-height: 2rem;
-    text-align: left;
+    text-align: justify;
     gap:2rem;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 }
 
 .text-container p {

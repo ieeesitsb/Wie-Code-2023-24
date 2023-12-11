@@ -24,10 +24,10 @@
     padding: 50px 0px 0px 30px;
 }
 .dom-heading h1{
-    font-weight: 300;
-    font-size: 60px;
-    color: lightblue;
+    font-size: 7rem;
+    color: #92E6FF;
     letter-spacing: 0.8rem;
+    font-weight: 400;
 }
 
 .card-d-container{
