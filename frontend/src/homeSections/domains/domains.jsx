@@ -2,6 +2,8 @@ import React from 'react'
 import Cards from './Cards'
 import './domains.css'
 import cardData from './data'; 
+import Aos from 'aos'
+import Fade from 'react-reveal/Fade';
 
 const Domains = () => {
     return (
@@ -11,7 +13,9 @@ const Domains = () => {
         <h1>DOMAINS</h1>
         </div>
         <div className='domain-mini-container'>
-        <div className='card-d-container'>
+        <Fade bottom distance="20%" duration={1000} >
+
+        <div data-aos="fade-up"  className='card-d-container'>
             {cardData.map((domain) => (
             <Cards
             key = {domain.id}
@@ -21,6 +25,7 @@ const Domains = () => {
             />
             ))}
         </div>
+        </Fade>
         </div>
     </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react'
 import './sponsorers.css'
-import NSLogo from '../../assets/images/sponsorer/ns,silks.jpg'
+import NSLogo from '../../assets/images/anagha-requirments/sponsor.png'
 import CSindia from '../../assets/images/sponsorer/computer society of india.png'
 
 const logos = [NSLogo,CSindia]
