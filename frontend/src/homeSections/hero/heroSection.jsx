@@ -23,9 +23,11 @@ function HeroSection() {
     <div>
       <div className='hero-main-container'>
         <div className='hero-text-container'>
+          <span className='hero-text-container organized-text' ><span>&nbsp;IEEE SIT SB presents&nbsp;</span> </span>
           <span className='hero-text-container hero-wie-code' data-attr="&nbsp;WIE CODE&nbsp;"><span>&nbsp;WIE CODE &nbsp;</span>  </span>
           <span className='hero-text-container hero-year' data-info="&nbsp;2023&nbsp;"><span>&nbsp; 2023-24 &nbsp;</span> </span>
-          <span className='hero-text-container organized-text' ><span>&nbsp;Organized by IEEE SIT SB&nbsp;</span> </span>
+          {/* <span className='hero-text-container organized-text' ><span>&nbsp;Organized by IEEE SIT SB&nbsp;</span> </span> */}
+
         </div>
         <div className='hero-gif-container'>
           <div className='hero-gif-sub-container'>

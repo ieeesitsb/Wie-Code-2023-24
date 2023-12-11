@@ -1,5 +1,6 @@
 import React from 'react'
 import './rules.css'
+import Fade from 'react-reveal/Fade';
 
 const Rules = () => {
     return (
@@ -8,6 +9,7 @@ const Rules = () => {
             <div className='rules-heading'>
                 <h1>RULES AND REGULATIONS</h1>
             </div>
+            <Fade>
             <div className="rules-content">
                 <ul className='rules-ul'>
                     <li>
@@ -67,6 +69,7 @@ const Rules = () => {
                     </li>
                 </ul>
             </div>
+            </Fade>
         </div>
     </div>
 )
