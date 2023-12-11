@@ -2,68 +2,50 @@ import React from 'react';
 import '../css/contactUs.css';
 import Header from '../components/header/header';
 import image from '../assets/images/WIELogo-removebg-preview.png'
+import Footer from '../components/footer/footer'
+import illustration from '../assets/images/contact.svg'
 
 
 function contactUs() {
   return (
-    <div className='main'>
+    <div className='outer-container'>
       <Header />
-      <div className='mid-section'>
-        <div className='left'>
-
-          {/* <div className='labels'>
-              <label className='label1' >
-                <input placeholder='Full name' type="text" />
-              </label>
-              <label className='label2' placeholder='Email'>
-                <input placeholder='Email' type="text" />
-              </label>
-            </div> 
-            <div className='textareaa'>
-              <textarea placeholder='Message' name="" id="" cols="30" rows="10"></textarea>
-            </div> */}
+      <div className='container-one'>
+        <div className='container-one-left'>
+          <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
+          <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
+          <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+          <button className='sub-btn'>Submit</button>
         </div>
-        <div className='right'>
-          <div className='heading-part'>
-            <span className='heading-span1'> Contact</span><span className='heading-span'> Us</span>
-          </div>
-          <div className='content-span'>
-            {/* <span className='inside-span'>I can't explain I got a feeling that I just I can't erase Just a feeling that I won't Won't leave behind Because it's something that is on It's on my mind</span>
-            <span className='inside-span'>Would you like to know more about our services or how we can help your business?</span>
-            <span className='inside-span'>Fien', fien', fien', fien'-fien' (Yeah)Fien', fien', fien', fien'-fien' (Yeah)Fien', fien', fien', fien'-fien'Fien', fien'(Yeah), fien', fien', fien'</span> */}
-          </div>
+        <div className='container-one-right'>
+          <div className='heading-span'><span className='contact-heading'>Contact</span><span className='us'>Us</span></div>
+          <div className='illustration'><img src={illustration} alt="" /></div>
         </div>
       </div>
-      <div className='footer-part'>
-        <div className='fl'>
-          <div className='logo'>
-            <img src={image} alt="" />
-          </div>
-          <div className='names'>
-            <div className='name'>
-              <span>Name1</span>
-              <span>Other info</span>
-              <span>Number</span>
-            </div>
-            <div className='name'>
-              <span>Name1</span>
-              <span>Other info</span>
-              <span>Number</span>
-            </div>
-            <div className='name'>
-              <span>Name1</span>
-              <span>Other info</span>
-              <span>Number</span>
-            </div>
-            <div className='name'>
-              <span>Name1</span>
-              <span>Other info</span>
-              <span>Number</span>
-            </div>
-          </div>
+      <div className='contact-container'>
+        <div className='wie-logo'> <img src={image} alt="" /></div>
+        <div className='contact-name'>
+          <span>Kona Chandra Kiran</span>
+          <span>IEEE Chairman</span>
+          <span>9989794662</span>
+        </div>
+        <div className='contact-name'>
+          <span>Adarsh Reddy P </span>
+          <span>IEEE Vice Chairman</span>
+          <span>9591488158</span>
+        </div>
+        <div className='contact-name'>
+          <span>Chandana R</span>
+          <span>Wie chairman</span>
+          <span>7975720929</span>
+        </div>
+        <div className='contact-name'>
+          <span>Nanditha B U</span>
+          <span>Wie Vice Chairman</span>
+          <span>9591619331</span>
         </div>
       </div>
-
+      <Footer />
     </div>
   )
 }
