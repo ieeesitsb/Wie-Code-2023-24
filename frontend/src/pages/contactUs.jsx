@@ -45,7 +45,7 @@ function contactUs() {
           <span>9591619331</span>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
