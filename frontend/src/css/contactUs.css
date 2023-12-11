@@ -2,6 +2,11 @@
   height: 100vh;
   /* background-image: url('../assets/images/contact//star .png');
   background-size: cover; */
+
+  background: url(../assets/images/likith/abstract-textured-backgound.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover
 }
 .container-one{
   display: flex;
