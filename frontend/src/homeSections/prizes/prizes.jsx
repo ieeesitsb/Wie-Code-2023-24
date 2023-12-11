@@ -13,7 +13,7 @@ function Prizes() {
       <div className="prize-item">
         <img src={abstract} alt="Prize 1" className="prize-image" />
         <div className="prize-text">
-          <p>BEST ABSTRACT</p>
+          <p>BEST ABSTRACT</p> 
           <p>2000/-</p>
         </div>
       </div>
