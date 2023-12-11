@@ -2,6 +2,7 @@
 
 .prizes-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -12,6 +13,7 @@
 width: 100%;
     /* Prevent horizontal scrollbar */
 }
+
 
 .prize-item {
     text-align: center;
@@ -32,17 +34,35 @@ width: 100%;
     text-shadow: 0 0 15px rgba(194, 217, 255, 0.9);
     /* Neon glow effect */
 }
+.heading-text{
+    display: flex;
+    color: #92E6FF;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.heading-text h1{
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+    padding-bottom: 5rem;
+}
+.all-prizes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 600px) {
-    .prizes-container {
+    .all-prizes {
         flex-direction: column;
         align-items: center;
     }
 
     .prize-item {
         text-align: center;
-        width: 150px;
+        width: 130px;
         margin: 20px;
         box-sizing: border-box;
     }

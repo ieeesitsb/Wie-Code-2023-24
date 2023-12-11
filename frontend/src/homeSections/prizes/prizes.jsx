@@ -9,9 +9,12 @@ import '../prizes/prizes.css'
 function Prizes() {
   return (
     <div className="prizes-container">
+      <div className='heading-text'>
+        <h1>PRIZES</h1>
+      </div>
       
-
-      <div className="prize-item">
+    <div className="all-prizes">
+    <div className="prize-item">
         <img src={prize1} alt="Prize 2" className="prize-image" />
         <div className="prize-text">
           <p>FIRST PLACE</p>
@@ -49,6 +52,8 @@ function Prizes() {
           <p>2000/-</p>
         </div>
       </div>
+    </div>
+      
     </div>
   )
 }

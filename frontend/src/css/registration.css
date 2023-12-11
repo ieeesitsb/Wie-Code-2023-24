@@ -6,6 +6,13 @@
   background-size: cover;
   height: 720px;
 }
+.content_div1 h1{
+   margin-top: 10px;
+   padding-left:35px;
+   letter-spacing: 1.25px;
+   font-weight: 300;
+   font-size: 60px;
+}
 
 .a:hover {
   background-position: right center;
@@ -82,16 +89,7 @@
   letter-spacing: 4px;
 }
 
-.create p {
-  font-size: medium;
-}
-.a:hover{
-     background-position: right center; 
-    color: #fff;
-    text-decoration: none;
-    letter-spacing: 4px;
-  }
-  .create a{
+.create a{
     color: #fff;
     font-size: medium;
     letter-spacing: 0.75px;
@@ -104,13 +102,3 @@
   letter-spacing: 4px;
 }
 
-.create a {
-  color: #fff;
-  font-size: medium;
-  letter-spacing: 0.75px;
-}
-
-.create a {
-  font-size: 11px;
-  color: #C2D9FF;
-}

@@ -1,146 +1,321 @@
-.main{
-    height: 100vh;
-  }
-  /* always remember that a parent div must always have height in vh and not in %, the % is used for child div */
-  .mid-section{
-    display: flex;
-    flex-direction: row;
-    height: 54vh;
-    width: 100%;
-  }
-  .left{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-  }
-  /* .labels {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .label1,
-  .label2 {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6vw; 
-    
-    width: 30%; 
-    height: 3vh; 
-    margin-top: 10rem;
-    
-    
-  }
-  .label1{
-    margin-left: 25%;
-    margin-right: 5rem;
-    
-  }
-  
-  .label1 input,
-  .label2 input {
-    padding: 14px; 
-    border-color: aliceblue;
-    
-    font-size: 1.3vw; 
-    height: 10vh; 
-    color: rgb(246, 248, 251);
-    background-color: transparent;
-  
-  }
-  .textareaa{
-    margin-left: 12.5vw;
-    margin-top: 6vw;
-  }
-  .textareaa textarea{
-    width: 60rem;
-    height: 21vh;
-    color: aliceblue;
-    font-size: 2rem;
-    background-color: transparent;
-    border-color: aliceblue;
-  }
-   */
-  .right{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-image: url('../assets/images/likith/new_bg_69@2x.jpg');  
-    background-position: cover;
-    background-repeat: no-repeat; */
+.outer-container{
+  height: 100vh;
+  /* background-image: url('../assets/images/contact//star .png');
+  background-size: cover; */
 
-  }
-  .heading-part{
+  background: url(../assets/images/likith/abstract-textured-backgound.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.container-one{
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  width: 100%;
+}
+.container-one-left{
+  width: 50%;
+  height: 100%;
+}
+.first-input{
+  margin-left: 20%;
+  width: 30%;
+  height: 5%;
+  margin-top: 25%;
+  background-color: transparent;
+  border-radius: 1px;
+  border-color: white;
+  color: white;
+  font-size: 1vw;
+}
+.second-input{
+  margin-left: 2%;
+  width: 30%;
+  height: 5%;
+  margin-top: 25%;
+  background-color: transparent;
+  border-radius: 1px;
+  border-color: white;
+  color: white;
+  font-size: 1vw;
+}
+
+.message-area{
+  margin-left: 20%;
+  margin-top: 2%;
+  width: 63.5%;
+  height: 20vh;
+  background-color: transparent;
+  border-radius: 1px;
+  border-color: white;
+  color: white;
+  font-size: 1vw;
+}
+.sub-btn{
+  margin-left: 45%;
+  margin-top: 3%;
+  height: 5%;
+  width: 10%;
+  
+}
+/* margin is to make space between any two adjacent elements */
+/* suppose in my div there are two labels, next to each other and  if i give margin left to first label , 
+it moves left by some percent from wall of div and if i give margin left to second label , will it be 
+from wall of the div or from the first label?
+
+Answer: If you give a margin-left to the second label, it will create space between the second label and the 
+first label, not between the second label and the wall of the div. The margin applies to the space outside the 
+element's border. */
+.container-one-right{
+  width: 50%;
+  height: 100%;
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.container-one-right span{
+  font-size: 3vw;
+}
+.contact-heading{
+  margin-left: 30%;
+}
+.us{
+  margin-left: 2%;
+}
+.heading-span{
+  margin-top: 10%;
+}
+.container-one-right img{
+  max-width: 75%;
+  max-height: 75%;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  height: 16%;
+  width: 100%;
+}
+.contact-name , .wie-logo{
+  width: 20%;
+  height: 100%;
+}
+.wie-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* How to target img inside div? */
+/* Assuming you have the following HTML structure
+<div class="parent-div">
+  <img src="your-image-source.jpg" alt="Your Image Alt Text">
+</div>
+
+/* CSS to target the img inside the parent-div */
+/* .parent-div img { */
+  /* Your styles here */
+  /* width: 100%; For example, setting the width to 100% */
+  /* border: 2px solid #ccc; Adding a border for illustration */
+/* } */ 
+
+
+
+
+/* the best practise for responsive images */
+.wie-logo img{
+  max-width: 30%;
+  max-height: 30%;
+}
+.contact-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* always use vw for text responsiveness */
+/* how to decide vw? , simple use different phones and click on the font each time and it will show the size right,apply
+ rem,% and other stuff ,  only in vw it changes for different phones */
+.contact-name span{
+  color: aliceblue;
+  font-size: 1.1vw;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ 
+  .container-one{
     display: flex;
-    flex-direction: row;
-    height: 10%;
+    flex-direction: column-reverse;
+    height: 95%;
+    margin-top: 0;
+  }
+
+
+  .container-one-right{
     width: 100%;
-    margin-top: 10%;
-    
-  }
-  .heading-span1{
-    
-    font-size: 2.5vw; 
-    /* if text has to be responsive then use vw */
-    color: rgb(142, 143, 250);
-    margin-left: 45%;
-  }
-  .content-span{
-    margin-top: 3vh;
-    width: 50%;
-    margin-left: 20%;
-    font-size: 1vw;
-    color: aliceblue;
+    height: 50%;
+    color: azure;
     display: flex;
     flex-direction: column;
-    padding-top: 1vh; 
+    justify-content: center;
   }
-  .inside-span{
-    margin-top: 3%;
+  .container-one-right span{
+    font-size: 7vw;
   }
-  .heading-span{
-    padding-left: 0.5vw;
-    font-size: 2.5vw; 
-    
-    /* if text has to be responsive then use vw */
-    color: aliceblue;
-  }
-  .footer-part{
+  .container-one-left{
+    width: 100%;
+    height: 50%;
+    padding-top: -10rem;
     display: flex;
     flex-direction: column;
-    height: 37vh;
+  }
+  .message-area{
+    width: 65.5%;
+    height: 20vh;
+  }
+ .contact-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 0%;
+  margin-bottom: 35%;
+ }
+
+ .wie-logo img{
+  max-width: 0%;
+  max-height: 0%;
+}
+.contact-name span{
+  color: aliceblue;
+  font-size: 2.3vw;
+}
+.contact-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.sub-btn{
+  margin-left: 45%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  height: 11%;
+  width: 20%;
   
-    
-  }
-  .fl{
+}
+
+
+.first-input{
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 35.5%;
+  height: 10%;
+}
+.second-input{
+  margin-top: 2%;
+  margin-left: 35%;
+  width: 35.5%;
+  height: 10%;
+}
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container-one{
+    display: flex;
+    flex-direction: column-reverse;
     height: 100%;
-    display: flex;
-    flex-direction: row;
+    margin-top: 12%;
   }
-  
-  .logo img{
-    margin-left: 20rem;
-    margin-top:15.5rem;
-    width: 8rem;
-    height: 5rem;
-  }
-  .logo{
-    width: 30%;
-  }
-  .names{
-    width: 70%;
-    margin-left: 10rem;
-    display: flex;
-    flex-direction: row;
-  }
-  .name{
-    margin-top: 15rem;
-    width: 25%;
+
+
+  .container-one-right{
+    width: 100%;
+    height: 50%;
+    color: azure;
     display: flex;
     flex-direction: column;
-    color: aliceblue;
-    font-size: 1vw;
+    justify-content: center;
   }
+  .container-one-right span{
+    font-size: 7vw;
+  }
+  .container-one-left{
+    width: 100%;
+    height: 50%;
+    padding-top: -10rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .message-area{
+    width: 65.5%;
+    height: 10vh;
+  }
+ .contact-container{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: -10vh;
+  margin-bottom: 45%;
+ }
+
+ .wie-logo img{
+  max-width: 0%;
+  max-height: 0%;
+}
+.contact-name span{
+  color: aliceblue;
+  font-size: 2.3vw;
+}
+.contact-name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4%;
+  margin-left: 45%;
+  margin-top: 5%;
+}
+
+.sub-btn{
+  margin-left: 45%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  height: 10%;
+  width: 20%;
   
+}
+
+
+.first-input{
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 35.5%;
+  height: 10%;
+}
+.second-input{
+  margin-top: 2%;
+  margin-left: 35%;
+  width: 35.5%;
+  height: 10%;
+}
+
+
+
+ 
+
+}
