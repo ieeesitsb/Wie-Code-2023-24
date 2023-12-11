@@ -3,8 +3,10 @@
     top:0;
 }
 .rules-mini-container{
-    margin: 8%;
-    background-color: #030E2C;
+    margin: 50px;
+    background-color: RGB(6, 24, 74, 0.2);
+    border-radius: 0.8rem;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 }
 
 .rules-heading {
@@ -21,10 +23,10 @@
     font-size: 7rem;
 }
 .rules-content{
-    padding: 0% 2%;
+    padding: 0% 2% 2% 2%;
 }
 .rules-ul{
-    font-size: 20px;
+    font-size: 18px;
     gap:2rem;
 }
 .rules-ul li{
@@ -36,9 +38,13 @@
 @media only screen and (max-width: 480px) {
     .rules-heading h1{
         font-weight: 300;
-        font-size: 5rem;
+        font-size: 4rem;
+        padding: 0px;
+    }
+    .rules-content{
+        padding: 5px;
     }
     .rules-ul{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
