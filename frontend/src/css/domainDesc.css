@@ -1,13 +1,21 @@
 .main-container{
-    display: flex;
-    justify-content: center;
     background: rgb(3,14,44);
     background: linear-gradient(0deg, rgba(3,14,44,1) 0%, rgba(0,12,70,1) 47%, rgba(3,14,44,1) 100%);
-    height: 100vh;
+    max-height: 100vh;
+}
+.mini-desc-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text-container{
-    width: 50%;
+    max-width: 50%;
+}
+.text-mini-container{
+    padding: 20px;
+    width: 100%;
     background-color: #fff;
     opacity: 0.4;
     border-radius: 5px;
@@ -15,42 +23,39 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap:8rem;
-    padding: 40px;
-    margin: 50px;
-    line-height: 4rem;
-    /* font-size: 100px; */
+    /* padding: 20px; */
+    line-height: 3rem;
 }
 
+
 .text-container p{
-    font-size: 20px;
+    font-size: 18px;
+    /* padding: 50px 30px 50px 30px; */
 }
 .text-container h1{
-    font-size: 45px;
+    font-size: 40px;
+    /* padding: 50px 20px 0px 50px; */
     line-height: 4.9rem;
 }
 .desc-img{
     width: 50%;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .imaage{
     object-fit: cover;
-    margin-top: 20px;
-    padding: 10px;
-    width: 1000%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 900px) {
-    .main-container{
-        flex-direction: column;
+    .mini-desc-container{
+        flex-direction: column-reverse;
         margin: auto;
     }
-    .text-container{
-        gap:4.5rem;
-    }
+    
     .text-container h1{
         line-height:4rem;
         font-size: 5rem;
@@ -62,37 +67,14 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .main-container{
-        padding: 0px;
-        flex-direction: column;
-        margin: 0px;
-    }
-    .main-container::before{
-        background: url('https://i.pinimg.com/564x/ca/06/ba/ca06bae0d65cd77b646c2923dbbb3512.jpg');
-        opacity:0.2;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-    }
-    .text-container{
-        line-height: 2.5rem;
-        margin-top: 0px;
-        font-size: 50px;
-    }
-    .text-container h1{
-        line-height:3rem;
-        font-size: 28px;
-    }
-    .text-container p{
-        font-size: 12px;
-        line-height:2rem ;
-    }
-    .imaage{
+    .desc-img{
         display: none;
     }
-
+    .text-mini-container{
+        width: 100%;
+    }
+    .text-mini-container{
+        padding: 50px;
+    }
+    
 }

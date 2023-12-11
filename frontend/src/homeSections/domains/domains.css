@@ -9,7 +9,7 @@
 .domain-mini-container{
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    margin: 50px; 
     margin-top: 50px;
     /* background-color: rgb(3, 14, 44, 0.2); */
     /* background-color: rgba(5,1,19,0.5); */
@@ -47,7 +47,8 @@
 }
 
 @media only screen and (max-width: 412px) {
-    .card-d-container{
+    .card-mini-container{
+        margin: 0px;
         padding: 100px 0px;
     }
 }
