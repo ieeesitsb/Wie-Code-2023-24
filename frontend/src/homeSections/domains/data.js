@@ -17,6 +17,12 @@ const cardData =[
         text: 'Open Innovation',
         desc: '"The Open Innovation" domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
     },
+    // { 
+    //     id: '3',
+    //     url: 'three.png', 
+    //     text: 'Open Innovation',
+    //     desc: 'The Open Innovation domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
+    // },
     { 
         id: '4',
         url: 'four.png', 
@@ -47,6 +53,12 @@ const cardData =[
         text: 'Education',
         desc: '"The Education" domain focuses on harnessing innovation and technology to address challenges within the education sector. Participants are encouraged to explore and develop solutions that can have a meaningful impact on access, quality, and inclusivity in education. The domain also invites participants to consider social issues related to education, such as addressing educational disparities, promoting digital literacy, and fostering lifelong learning.Projects may include the creation of innovative e-learning platforms, tools for personalised education, or applications that enhance accessibility for learners with diverse needs.'
     },
+    { 
+        id: '3',
+        url: 'three.png', 
+        text: 'Open Innovation',
+        desc: 'The Open Innovation domain centres on collaborative and transparent problem-solving. It encourages participants to engage in open and inclusive innovation processes, involving diverse ideas and resources . Participants are inspired to think beyond traditional boundaries, tapping into collective intelligence to address societal challenges. Open Innovation projects may include collaborative platforms, crowd-sourced solutions, and initiatives that bridge the gap between diverse communities. The domain highlights the power of collective creativity in driving meaningful impact and aims to inspire participants to embrace open innovation principles, ultimately fostering a culture of collaboration, diversity, and shared knowledge to address real-world issues.'
+    }
     
 ];
 

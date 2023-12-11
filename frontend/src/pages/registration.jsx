@@ -7,33 +7,33 @@ import Abstract_ppt from '../assets/files/WIE_CODE_PPT_FORMAT.pptx'
 function Registration() {
   return (
     <div className='content_div1 '>
-        <Header/>
+      <Header />
       <h1>REGISTER </h1>
       <div  >
-      <form className='create '>
-        <label>
-          Team Name:
-        </label>
-        <input type="text" required/>
-        <label>
-          Leader Name *(Must be girl):
-        </label>
-        <input type="text" required/>
-        <label>Team Size: </label>
-        <select>
-          <option value="select">select</option>
-          <option value="select">2</option>
-          <option value="select">3</option>
-          <option value="select">4</option>
-        </select>
-        <text>Abstract Formate(must strictly must followed)</text>
-        <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format   <span>Click here</span></a>
-        <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format  <span>Click here</span></a>
-        <button className='a'>Abstract</button>
-      </form>
-     
-    </div>
-     
+        <form className='create '>
+          <label>
+            Team Name:
+          </label>
+          <input type="text" required />
+          <label>
+            Leader Name *(Must be girl):
+          </label>
+          <input type="text" required />
+          <label>Team Size: </label>
+          <select>
+            <option value="select">select</option>
+            <option value="select">2</option>
+            <option value="select">3</option>
+            <option value="select">4</option>
+          </select>
+          <text>Abstract Formate(must strictly must followed)</text>
+          <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format   <span>Click here</span></a>
+          <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format  <span>Click here</span></a>
+          <button className='a'>Abstract</button>
+        </form>
+
+      </div>
+
     </div>
   )
 }
