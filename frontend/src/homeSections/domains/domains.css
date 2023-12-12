@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     margin: 50px; 
-    margin-top: 50px;
+    /* margin-top: 50px; */
     /* background-color: rgb(3, 14, 44, 0.2); */
     /* background-color: rgba(5,1,19,0.5); */
     /* background: rgb(34,34,71);
@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px 0px 30px;
+    /* padding: 50px 0px 0px 50px; */
 }
 .dom-heading h1{
     font-size: 7rem;
@@ -32,13 +32,19 @@
     position: relative;
 }
 .dom-heading h1::after{
-    content:"";
-    width: 100%;
-    height: .02em;
+    content: "";
+    width: 50%; 
+    height: 1px; 
     background-color: #92E6FF;
     position: absolute;
     bottom: -4px;
-    left:0
+    left: 24%; 
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transform-origin: center; 
+}
+.dom-heading h1:hover::after {
+    width: 100%; 
+    left: 0; 
 }
 
 .card-d-container{
@@ -51,15 +57,25 @@
     padding: 50px 60px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .card-d-container{
         padding: 100px 20px;
     }
+    .domain-mini-container{
+        margin: 30px;
+    }
+    
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 480px) {
     .card-mini-container{
         margin: 0px;
         padding: 100px 0px;
+    }
+    .dom-heading h1{
+        font-size: 5rem;
+    }
+    .domain-mini-container{
+        margin: 40px;
     }
 }
