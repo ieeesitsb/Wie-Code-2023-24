@@ -2,7 +2,7 @@ import React from 'react';
 import '../css/contactUs.css';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer'
-import illustration from '../assets/images/desc-bg.png'
+import illustration from '../assets/videos/contactus.gif'
 
 
 function contactUs() {
@@ -53,50 +53,54 @@ function contactUs() {
 
 
 
-    <div className='outside-container'>
+    // 
+    <div className='contact-main-container'>
       <Header />
-      <div className='center-container'>
-        <div className='main-heading'>
-          <span>CONTACT US</span>
-        </div>
-        <div className='middle-container'>
-          <div className='middle-container-left'>
-            <div className='input-area'>
-              <div className='input-one'><input className='input-one-text' type="text" id="fullName" placeholder="Enter your full name"></input></div>
-              <div className='input-two'><input className='input-two-text' type="text" id="fullName" placeholder="Enter your gmail"></input></div>
-            </div>
-            <div className='message-area'>
-              <textarea className='message-area-text' id="message" placeholder="Type your message"></textarea>
-            </div>
-            <div className='submit-btn'>
-              <button className='submit-btn-text'>Submit</button>
-            </div>
+      <div className='contact-middle-container'>
+        <div className='middle-left'>
+          <div className='input-one'>
+            <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
           </div>
-          <div className='middle-container-right'>
-            <img src={illustration} alt="" />
+          <div className='input-two'>
+            <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
+          </div>
+          <div className='textarea-one'>
+            <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+          </div>
+          <div className='submit-btn'>
+            <button>Submit</button>
           </div>
         </div>
-        <div className='contact-container'>
-          <div className='name1'>
-            <span></span>
-            <span></span>
-            <span></span>
+        <div className='middle-right'>
+          <div className='heading-span'>
+            <span>CONTACT US</span>
           </div>
-          <div className='name2'>
-            <span></span>
-            <span></span>
-            <span></span>
+          <div className='image-div'>
+            <img className='right-image' src={illustration} alt="" />
+
           </div>
-          <div className='name3'>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className='name4'>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+        </div>
+      </div>
+      <div className='contact-section'>
+        <div className='name1'>
+          <span className='namess'>Kona Chandra Kiran</span>
+          <span className='designation'>IEEE Chairman</span>
+          <span className='contact-number'>9989794662</span>
+        </div>
+        <div className='name2'>
+          <span className='namess'>Adarsh Reddy P </span>
+          <span className='designation'>IEEE Vice Chairman</span>
+          <span className='contact-number'>9591488158</span>
+        </div>
+        <div className='name3'>
+          <span className='namess'>Chandana R</span>
+          <span className='designation'>Wie chairman</span>
+          <span className='contact-number'>7975720929</span>
+        </div>
+        <div className='name4'>
+          <span className='namess'>Nanditha B U</span>
+          <span className='designation'>Wie Vice Chairman</span>
+          <span className='contact-number'>9591619331</span>
         </div>
       </div>
       <Footer />

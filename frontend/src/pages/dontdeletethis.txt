@@ -1,48 +1,106 @@
 import React from 'react';
 import '../css/contactUs.css';
 import Header from '../components/header/header';
-import image from '../assets/images/WIELogo-removebg-preview.png'
 import Footer from '../components/footer/footer'
-import illustration from '../assets/images/contact.svg'
+import illustration from '../assets/videos/contactus.gif'
 
 
 function contactUs() {
   return (
-    <div className='outer-container'>
+    // <div className='outer-container'>
+    //   <Header />
+    //   <div className='container-one'>
+    //     <div className='container-one-left'>
+    //       <div className='container-one-input'>
+    //         <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
+    //         <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
+    //       </div>
+    //       <div className='input-text-area'>
+    //         <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+    //       </div>
+    //       <button className='sub-btn'>Submit</button>
+    //     </div>
+    //     <div className='container-one-right'>
+    //       <div className='heading-span'><span className='contact-heading'>Contact</span><span className='us'>Us</span></div>
+    //       <div className='illustration'><img src={illustration} alt="" /></div>
+    //     </div>
+    //   </div>
+    //   <div className='contact-container'>
+    //     <div className='wie-logo'> <img src={image} alt="" /></div>
+    //     <div className='contact-name'>
+    //       <span>Kona Chandra Kiran</span>
+    //       <span>IEEE Chairman</span>
+    //       <span>9989794662</span>
+    //     </div>
+    //     <div className='contact-name'>
+    //       <span>Adarsh Reddy P </span>
+    //       <span>IEEE Vice Chairman</span>
+    //       <span>9591488158</span>
+    //     </div>
+    //     <div className='contact-name'>
+    //       <span>Chandana R</span>
+    //       <span>Wie chairman</span>
+    //       <span>7975720929</span>
+    //     </div>
+    //     <div className='contact-name'>
+    //       <span>Nanditha B U</span>
+    //       <span>Wie Vice Chairman</span>
+    //       <span>9591619331</span>
+    //     </div>
+    //   </div>
+    //   {/* <Footer /> */}
+    // </div>
+
+
+
+    // 
+    <div className='contact-main-container'>
       <Header />
-      <div className='container-one'>
-        <div className='container-one-left'>
-          <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
-          <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
-          <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
-          <button className='sub-btn'>Submit</button>
+      <div className='contact-middle-container'>
+        <div className='middle-left'>
+          <div className='input-one'>
+            <input className='first-input' type="text" id="fullName" placeholder="Enter your full name"></input>
+          </div>
+          <div className='input-two'>
+            <input className='second-input' type="text" id="email" placeholder="Enter your email"></input>
+          </div>
+          <div className='textarea-one'>
+            <textarea className='message-area' id="message" placeholder="Type your message"></textarea>
+          </div>
+          <div className='submit-btn'>
+            <button>Submit</button>
+          </div>
         </div>
-        <div className='container-one-right'>
-          <div className='heading-span'><span className='contact-heading'>Contact</span><span className='us'>Us</span></div>
-          <div className='illustration'><img src={illustration} alt="" /></div>
+        <div className='middle-right'>
+          <div className='heading-span'>
+            <span>CONTACT US</span>
+          </div>
+          <div className='image-div'>
+            <img className='right-image' src={illustration} alt="" />
+
+          </div>
         </div>
       </div>
-      <div className='contact-container'>
-        <div className='wie-logo'> <img src={image} alt="" /></div>
-        <div className='contact-name'>
-          <span>Kona Chandra Kiran</span>
-          <span>IEEE Chairman</span>
-          <span>9989794662</span>
+      <div className='contact-section'>
+        <div className='name1'>
+          <span className='namess'>Kona Chandra Kiran</span>
+          <span className='designation'>IEEE Chairman</span>
+          <span className='contact-number'>9989794662</span>
         </div>
-        <div className='contact-name'>
-          <span>Adarsh Reddy P </span>
-          <span>IEEE Vice Chairman</span>
-          <span>9591488158</span>
+        <div className='name2'>
+          <span className='namess'>Adarsh Reddy P </span>
+          <span className='designation'>IEEE Vice Chairman</span>
+          <span className='contact-number'>9591488158</span>
         </div>
-        <div className='contact-name'>
-          <span>Chandana R</span>
-          <span>Wie chairman</span>
-          <span>7975720929</span>
+        <div className='name3'>
+          <span className='namess'>Chandana R</span>
+          <span className='designation'>Wie chairman</span>
+          <span className='contact-number'>7975720929</span>
         </div>
-        <div className='contact-name'>
-          <span>Nanditha B U</span>
-          <span>Wie Vice Chairman</span>
-          <span>9591619331</span>
+        <div className='name4'>
+          <span className='namess'>Nanditha B U</span>
+          <span className='designation'>Wie Vice Chairman</span>
+          <span className='contact-number'>9591619331</span>
         </div>
       </div>
       <Footer />
@@ -52,364 +110,412 @@ function contactUs() {
 
 export default contactUs
 
-.outer-container {
+/* .outside-container {
   height: 100vh;
-  /* background-image: url('../assets/images/contact//star .png');
-  background-size: cover; */
-
   background: url(../assets/images/likith/abstract-textured-backgound.jpg);
-
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
-.container-one {
-  display: flex;
-  flex-direction: row;
-  height: 80vh;
+.center-container {
   width: 100%;
-}
-
-.container-one-left {
-  width: 50%;
   height: 100%;
-}
-.container-one-input{
-  display: flex;
-  justify-content: center;
-}
-.first-input {
-  width: 30%;
-  /* height: 5%; */
-  margin-top: 25%;
-  background-color: transparent;
-  border-radius: 1px;
-  border-color: white;
-  color: white;
-  font-size: 1vw;
-}
-
-.second-input {
-  margin-left: 2%;
-  width: 30%;
-  height: 5%;
-  margin-top: 25%;
-  background-color: transparent;
-  border-radius: 1px;
-  border-color: white;
-  color: white;
-  font-size: 1vw;
-}
-.input-text-area{
-  /* margin: 0rem 4rem; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.message-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: 20%; */
-  margin-top: 2%;
-  width: 63.5%;
-  /* use padding to set heigth and width of any child div */
-  /* padding:  14rem 18rem; */
-  height: 20vh;
-  background-color: transparent;
-  border-radius: 1px;
-  border-color: white;
-  color: white;
-  font-size: 1vw;
-}
-
-.sub-btn {
-  margin-left: 45%;
-  margin-top: 3%;
-  height: 5%;
-  width: 10%;
-
-}
-
-/* margin is to make space between any two adjacent elements */
-/* suppose in my div there are two labels, next to each other and  if i give margin left to first label , 
-it moves left by some percent from wall of div and if i give margin left to second label , will it be 
-from wall of the div or from the first label?
-
-Answer: If you give a margin-left to the second label, it will create space between the second label and the 
-first label, not between the second label and the wall of the div. The margin applies to the space outside the 
-element's border. */
-.container-one-right {
-  width: 50%;
-  height: 100%;
-  color: azure;
   display: flex;
   flex-direction: column;
+}
+
+.main-heading {
+  display: flex;
   justify-content: center;
-
+  align-items: center;
+  width: 100%;
+  height: 10%;
 }
 
-.container-one-right span {
-  font-size: 3vw;
+.main-heading span {
+  color: aliceblue;
+  font-size: 5rem;
 }
 
-.contact-heading {
-  margin-left: 30%;
+.middle-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
 }
 
-.us {
-  margin-left: 2%;
+.middle-container-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.heading-span {
-  margin-top: 20%;
+.input-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+.input-one{
+  width: 50%;
+  padding-bottom: 5%;
+  padding-top: 13%;
+  padding-left: 19%;
+  
 }
 
-.container-one-right img {
-  max-width: 75%;
-  max-height: 75%;
-  margin-top: 5%;
-  margin-left: 15%;
+.input-two{
+  width: 50%;
+  padding-bottom: 5%;
+  padding-top: 13%;
+  padding-right: 17%;
+}
+.input-one-text{
+  padding: 0.5% 20% 15% 2%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: aliceblue;
+  color:white;
+  font-size: 2rem;
+}
+
+.input-two-text{
+  padding: 0.5% 20% 15% 2%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: aliceblue;
+  color:white;
+  font-size: 2rem;
+}
+
+.message-area{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.message-area-text{
+  padding: 1% 38% 30% 1%;
+  font-size: 2rem;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: aliceblue;
+  color:white;
+  font-size: 2rem;
+}
+.submit-btn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+.submit-btn-text{
+  padding: 2.5% 7% 2.5% 7%;
+}
+
+.middle-container-right {
+  width: 50%;
+  height: 100%;
+}
+.middle-container-right img{
+ max-width: 80%;
+ max-height: 80%;
+ padding-left: 15%;
+ 
+ padding-right:5%;
+ padding-top: 5%;
 }
 
 
 .contact-container {
+  width: 100%;
+  height: 15%;
   display: flex;
   flex-direction: row;
-  height: 16%;
+}
+.name1,.name2,.name3,.name4{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+  padding-top: 1.5%;
+}
+ */
+
+
+.contact-main-container {
+  background: url(../assets/images/likith/abstract-textured-backgound.jpg);
+  background-repeat: no-repeat;
+}
+
+.contact-middle-container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-one,
+.input-two,
+.textarea-one,
+.submit-btn {
   width: 100%;
 }
 
-.contact-name,
-.wie-logo {
-  width: 20%;
-  height: 100%;
-}
-
-.wie-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* How to target img inside div? */
-/* Assuming you have the following HTML structure
-<div class="parent-div">
-  <img src="your-image-source.jpg" alt="Your Image Alt Text">
-</div>
-
-/* CSS to target the img inside the parent-div */
-/* .parent-div img { */
-/* Your styles here */
-/* width: 100%; For example, setting the width to 100% */
-/* border: 2px solid #ccc; Adding a border for illustration */
-/* } */
-
-
-
-
-/* the best practise for responsive images */
-.wie-logo img {
-  max-width: 30%;
-  max-height: 30%;
-}
-
-.contact-name {
+.input-one {
+  height: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.input-two {
+  height: 15%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-
-/* always use vw for text responsiveness */
-/* how to decide vw? , simple use different phones and click on the font each time and it will show the size right,apply
- rem,% and other stuff ,  only in vw it changes for different phones */
-.contact-name span {
+.first-input {
+  padding: 1% 25% 5% 1%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: white;
+  font-size: 2rem;
   color: aliceblue;
-  font-size: 1.1vw;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+.second-input {
+  padding: 1% 25% 5% 1%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: white;
+  font-size: 2rem;
+  color: aliceblue;
+}
 
-  .container-one {
+.textarea-one {
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.message-area {
+  padding: 1% 26% 15% 1%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: white;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.submit-btn {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.submit-btn button {
+  padding: 3% 8%;
+  background-color: transparent;
+  border-radius: 1rem;
+  border-color: white;
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+/* you can give classname to button insde submit-btn or else do as done above */
+.middle-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-span {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.heading-span span {
+  font-size: 3vw;
+  color: aliceblue;
+  letter-spacing: 5px;
+}
+
+.image-div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-div img {
+  max-width: 70%;
+  max-height: 70%;
+  background-color: #000519;
+  mix-blend-mode:screen;
+  outline: none;
+}
+
+
+
+.contact-section {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.name1,
+.name2,
+.name3,
+.name4 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+
+.namess {
+  font-size: 1.2vw;
+}
+
+.designation {
+  font-size: 1vw;
+}
+
+.contact-number {
+  font-size: 1vw;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+.contact-middle-container{
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+.middle-left,.middle-right{
+  width: 100%;
+}
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 35vh;
+  align-items: center;
+}
+.name1,
+.name2,
+.name3,
+.name4 {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  font-size: 5rem;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  letter-spacing: 3px;
+}
+.namess {
+  font-size: 4vw;
+}
+
+.designation {
+  font-size: 3.5vw;
+}
+
+.contact-number {
+  font-size: 3vw;
+}
+
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  .contact-middle-container{
     display: flex;
     flex-direction: column-reverse;
-    height: 95%;
-    margin-top: 0;
-  }
-
-
-  .container-one-right {
     width: 100%;
-    height: 50%;
-    color: azure;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-
-  .container-one-right span {
-    font-size: 7vw;
-  }
-
-  .container-one-left {
+  .middle-left,.middle-right{
     width: 100%;
-    height: 50%;
-    /* padding-top: -10rem; */
+  }
+  .middle-left{
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
-
-  .message-area {
-    /* width: 65.5%; */
-    /* height: 20vh; */
-  }
-
-  .contact-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    /* margin-top: 0%; */
-    /* margin-bottom: 35%; */
-  }
-
-  .wie-logo img {
-    display: none;
-  }
-
-  .contact-name span {
-    color: aliceblue;
-    font-size: 2.3vw;
-  }
-
-  .contact-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4%;
-    margin-left: 45%;
-    margin-top: 5%;
-  }
-
-  .sub-btn {
-    margin-left: 45%;
-    margin-top: 3%;
+  /* .input-one{
     margin-bottom: 5%;
-    height: 11%;
-    width: 20%;
-
   }
-
-  .first-input {
-    margin-top: 5%;
-    width: 65.5%;
-    height: 10%;
-  }
-
-  .second-input {
-    margin-top: 2%;
-    width: 65.5%;
-    height: 10%;
-  }
-
-
-}
-
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .container-one {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100%;
-    margin-top: 12%;
-  }
-
-
-  .container-one-right {
-    width: 100%;
-    height: 50%;
-    color: azure;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .container-one-right span {
-    font-size: 7vw;
-  }
-
-  .container-one-left {
-    width: 100%;
-    height: 50%;
-    padding-top: -10rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .message-area {
-    width: 65.5%;
-    height: 10vh;
-  }
-
-  .contact-container {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-top: -10vh;
-    margin-bottom: 45%;
-  }
-
-  .wie-logo img {
-    max-width: 0%;
-    max-height: 0%;
-  }
-
-  .contact-name span {
-    color: aliceblue;
-    font-size: 2.3vw;
-  }
-
-  .contact-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 4%;
-    margin-left: 45%;
-    margin-top: 5%;
-  }
-
-  .sub-btn {
-    margin-left: 45%;
-    margin-top: 3%;
+  .input-two{
     margin-bottom: 5%;
-    height: 10%;
-    width: 20%;
-
   }
-
-
-  .first-input {
-    margin-top: 5%;
-    margin-left: 35%;
-    width: 35.5%;
-    height: 10%;
+  .textarea-one{
+    margin-bottom: 5%;
+  } */
+  .contact-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 55vh;
+    align-items: center;
   }
-
-  .second-input {
-    margin-top: 2%;
-    margin-left: 35%;
-    width: 35.5%;
-    height: 10%;
+  .name1,
+  .name2,
+  .name3,
+  .name4 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    letter-spacing: 3px;
   }
-
-
-
-
-
-}
+  .namess {
+    font-size: 4vw;
+  }
+  
+  .designation {
+    font-size: 3.5vw;
+  }
+  
+  .contact-number {
+    font-size: 3vw;
+  }
+  
+  }
