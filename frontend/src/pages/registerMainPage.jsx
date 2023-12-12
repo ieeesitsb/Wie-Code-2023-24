@@ -5,6 +5,7 @@ import Loader from '../components/loader/loader';
 import Registration from './registration';
 import { RegisterPage1 } from '../registrationPages/page1/registerPage1';
 import { RegisterPage2 } from '../registrationPages/page2/registerPage2';
+import '../css/registration.css'
 function RegisterMainPage() {
     const navigate = useNavigate();
     const user = useContext(userContext);
@@ -132,17 +133,17 @@ function RegisterMainPage() {
                                 onClick={() => {
                                     setPage((currPage) => currPage - 1)
                                 }}
-                            >Prev</button>
+                                className='button_register a '>Prev</button>
                             {
                                 !(page === titles.length - 1) && <button
                                     disabled={page === titles.length - 1}
                                     onClick={handleNext}
-                                >Next</button>}
+                                className='button_register a'>Next</button>}
                             {
                                 (page === titles.length - 1) && <button
                                     onClick={handleNext}
                                     disabled={loading}
-                                >Submit</button>
+                                    className='button_register a'>Submit</button>
                             }
                         </div>
                     </div>
