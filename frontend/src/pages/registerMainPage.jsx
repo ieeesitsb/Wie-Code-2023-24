@@ -6,6 +6,8 @@ import Registration from './registration';
 import { RegisterPage1 } from '../registrationPages/page1/registerPage1';
 import { RegisterPage2 } from '../registrationPages/page2/registerPage2';
 import axios from '../axios/axios';
+import '../css/registration.css'
+// import '../page1/registerPage1.css'
 function RegisterMainPage() {
     const navigate = useNavigate();
     const user = useContext(userContext);
@@ -117,7 +119,7 @@ function RegisterMainPage() {
 
     return (
         <userContext.Provider value={{ teamSize: teamSize }}>
-            <div>
+            <div className='content_div1' style={{'background-image':'../assets/images/likith/abstract-textured-backgound.jpg'}}>
                 <div className="form-box-container">
                     <div className="form-progress-bar"></div>
                     <div className="form-box">
@@ -126,25 +128,26 @@ function RegisterMainPage() {
                         </div>
                         <div className="form-body">
                             {PageDisplay()}
-                        </div>
-                        <div className="form-footer">
-                            <button
-                                disabled={page === 0}
-                                onClick={() => {
-                                    setPage((currPage) => currPage - 1)
-                                }}
-                            >Prev</button>
-                            {
-                                !(page === titles.length - 1) && <button
-                                    disabled={page === titles.length - 1}
-                                    onClick={handleNext}
-                                >Next</button>}
-                            {
-                                (page === titles.length - 1) && <button
-                                    onClick={handleNext}
-                                    disabled={loading}
-                                >Submit</button>
-                            }
+
+                            <div className="form-footer">
+                                <button
+                                    disabled={page === 0}
+                                    onClick={() => {
+                                        setPage((currPage) => currPage - 1)
+                                    }}
+                                    className='button_register a '>Prev</button>
+                                {
+                                    !(page === titles.length - 1) && <button
+                                        disabled={page === titles.length - 1}
+                                        onClick={handleNext}
+                                        className='button_register a'>Next</button>}
+                                {
+                                    (page === titles.length - 1) && <button
+                                        onClick={handleNext}
+                                        disabled={loading}
+                                        className='button_register a'>Submit</button>
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

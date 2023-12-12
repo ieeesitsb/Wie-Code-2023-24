@@ -15,7 +15,7 @@ function Registration(props) {
     props.setTeamName("");
   }, []);
   return (
-    <div className='content_div1 '>
+    <div>
       <Header />
       {/* <Form> */}
         <h1>REGISTER </h1>
