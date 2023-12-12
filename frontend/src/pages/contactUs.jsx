@@ -63,16 +63,41 @@ function contactUs() {
           <div className='middle-container-left'>
             <div className='input-area'>
               <div className='input-one'><input className='input-one-text' type="text" id="fullName" placeholder="Enter your full name"></input></div>
-              <div className='input-two'><input className='input-two-text' type="text" id="fullName" placeholder="Enter your full name"></input></div>
+              <div className='input-two'><input className='input-two-text' type="text" id="fullName" placeholder="Enter your gmail"></input></div>
             </div>
             <div className='message-area'>
               <textarea className='message-area-text' id="message" placeholder="Type your message"></textarea>
             </div>
-            <div className='submit-btn'></div>
+            <div className='submit-btn'>
+              <button className='submit-btn-text'>Submit</button>
+            </div>
           </div>
-          <div className='middle-container-right'></div>
+          <div className='middle-container-right'>
+            <img src={illustration} alt="" />
+          </div>
         </div>
-        <div className='contact-container'></div>
+        <div className='contact-container'>
+          <div className='name1'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className='name2'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className='name3'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div className='name4'>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
