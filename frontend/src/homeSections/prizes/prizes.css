@@ -50,13 +50,19 @@ width: 100%;
     position: relative;
 }
 .heading-text h1::after{
-    content:"";
-    width: 100%;
-    height: .02em;
+    content: "";
+    width: 50%; 
+    height: 1px; 
     background-color: #92E6FF;
     position: absolute;
-    bottom: 40px;
-    left:0
+    bottom: 35px;
+    left: 24%; 
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transform-origin: center; 
+}
+.heading-text h1:hover::after {
+    width: 100%; 
+    left: 0; 
 }
 .all-prizes{
     display: flex;
@@ -90,5 +96,11 @@ width: 100%;
         /* Neon color */
         text-shadow: 0 0 15px rgba(194, 217, 255, 0.9);
         /* Neon glow effect */
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .heading-text h1{
+        font-size: 5rem;
     }
 }
