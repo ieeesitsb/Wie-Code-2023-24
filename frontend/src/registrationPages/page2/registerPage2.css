@@ -37,3 +37,19 @@ select {
     display: flex;
     margin-left: 20px;
 }
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .domain_part2 h1 {
+       
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: 30px;
+        color: #C2D9FF;
+    }
+
+    .part-1-main-container label {
+       
+        font-weight: 15px;
+        font-size: medium;
+        
+    }
+}
