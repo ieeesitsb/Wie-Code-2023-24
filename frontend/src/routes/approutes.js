@@ -5,6 +5,7 @@ import AboutUs  from '../pages/aboutUs'
 import DomainDesc from '../pages/domainDesc'
 import ContactUs from '../pages/contactUs'
 import Registration from '../pages/registration'
+import RegisterMainPage from '../pages/registerMainPage';
 
 
 function Approutes() {
@@ -15,7 +16,7 @@ function Approutes() {
             <Route path="/about-us" element={<AboutUs/>}/>
             <Route path="/description" element={<DomainDesc />} />
             <Route path="/contactus" element={<ContactUs />} />
-            <Route path = "/register" element={<Registration/>}/>
+            <Route path = "/register" element={<RegisterMainPage/>}/>
         </Routes>
     </div>
   )
