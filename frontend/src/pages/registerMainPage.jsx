@@ -5,6 +5,7 @@ import Loader from '../components/loader/loader';
 import Registration from './registration';
 import { RegisterPage1 } from '../registrationPages/page1/registerPage1';
 import { RegisterPage2 } from '../registrationPages/page2/registerPage2';
+import axios from '../axios/axios';
 function RegisterMainPage() {
     const navigate = useNavigate();
     const user = useContext(userContext);
@@ -39,19 +40,19 @@ function RegisterMainPage() {
         form.append('referral', refferal)
         form.append('teamDetails', JSON.stringify(teamDetails));
         console.log(teamDetails, teamSize, teamName, domain, abstract);
-        // const res = await axios.post("/register", form, {
-        //     headers: {
-        //         "Content-Type": "multipart/form-data"
-        //     }
-        // }).catch((err) => {
-        //     console.log(err);
-        //     alert("something went wrong ;) please try again later");
-        //     navigate("/");
-        // });
-        // if (res.data.status === 200) {
-        //     alert("We have received your abstract. All the best :)");
-        //     navigate("/");
-        // }
+        const res = await axios.post("/register", form, {
+            headers: {
+                "Content-Type": "multipart/form-data"
+            }
+        }).catch((err) => {
+            console.log(err);
+            alert("something went wrong ;) please try again later");
+            navigate("/");
+        });
+        if (res.data.status === 200) {
+            alert("We have received your abstract. All the best :)");
+            navigate("/");
+        }
         setLoading(false);
     }
 
