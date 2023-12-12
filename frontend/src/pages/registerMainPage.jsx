@@ -6,6 +6,7 @@ import Registration from './registration';
 import { RegisterPage1 } from '../registrationPages/page1/registerPage1';
 import { RegisterPage2 } from '../registrationPages/page2/registerPage2';
 import '../css/registration.css'
+// import '../page1/registerPage1.css'
 function RegisterMainPage() {
     const navigate = useNavigate();
     const user = useContext(userContext);
@@ -117,7 +118,7 @@ function RegisterMainPage() {
 
     return (
         <userContext.Provider value={{ teamSize: teamSize }}>
-            <div>
+            <div className='content_div1'>
                 <div className="form-box-container">
                     <div className="form-progress-bar"></div>
                     <div className="form-box">
