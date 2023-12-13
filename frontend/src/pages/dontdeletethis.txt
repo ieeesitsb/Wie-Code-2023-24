@@ -518,4 +518,4 @@ export default contactUs
     font-size: 3vw;
   }
   
-  }
+}
