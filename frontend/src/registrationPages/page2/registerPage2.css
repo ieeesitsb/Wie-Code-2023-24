@@ -1,7 +1,7 @@
 .domain_part2 {
     color: #C2D9FF;
     margin-top: 0px;
-    background: url('../../assets/images/_ca58fc64-19d1-4e1e-890b-eaef4d3f0542.jpeg');
+    /* background: url('../../assets/images/likith/abstract-textured-backgound.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -36,4 +36,21 @@ select {
     box-sizing: border-box;
     display: flex;
     margin-left: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .domain_part2 h1 {
+
+        letter-spacing: 1px;
+        font-weight: 200;
+        font-size: 30px;
+        color: #C2D9FF;
+    }
+
+    .part-1-main-container label {
+
+        font-weight: 15px;
+        font-size: medium;
+
+    }
 }

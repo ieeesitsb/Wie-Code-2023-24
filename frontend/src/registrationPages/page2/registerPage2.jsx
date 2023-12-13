@@ -2,11 +2,13 @@ import React from 'react'
 import { Form } from 'react-router-dom';
 
 import '../page2/registerPage2.css'
+import Header from '../../components/header/header';
 export const RegisterPage2 = (props) => {
     return (
         <div className='domain_part2'>
+            <Header/>
             {/* <Form> */}
-                <h1>Domain and Abstract 🤔</h1>
+                <h1>Domain and Abstract </h1>
                 <div className='part-1-main-container'>
                     <form >
                         <label className='label'>Domain :</label>

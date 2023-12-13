@@ -15,7 +15,7 @@ function Registration(props) {
     props.setTeamName("");
   }, []);
   return (
-    <div className='content_div1 '>
+    <div>
       <Header />
       {/* <Form> */}
         <h1>REGISTER </h1>
@@ -30,11 +30,11 @@ function Registration(props) {
             </label>
             <input type="text" required />
             <label>Team Size: </label>
-            <select onChange={(e) => props.setTeamSize(e.target.value)}>
-              <option value="select">select</option>
-              <option value="select">2</option>
-              <option value="select">3</option>
-              <option value="select">4</option>
+            <select name="size" id="size" onChange={(e) => props.setTeamSize(e.target.value)}>
+              <option value="">select</option>
+              <option value={2}>2</option>
+              <option value={3}>3</option>
+              <option value={4}>4</option>
             </select>
             <text>Abstract Format(to be followed strictly)</text>
             <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format  <span>Click here</span></a>

@@ -5,7 +5,9 @@ import Loader from '../components/loader/loader';
 import Registration from './registration';
 import { RegisterPage1 } from '../registrationPages/page1/registerPage1';
 import { RegisterPage2 } from '../registrationPages/page2/registerPage2';
+import axios from '../axios/axios';
 import '../css/registration.css'
+// import '../page1/registerPage1.css'
 function RegisterMainPage() {
     const navigate = useNavigate();
     const user = useContext(userContext);
@@ -40,19 +42,19 @@ function RegisterMainPage() {
         form.append('referral', refferal)
         form.append('teamDetails', JSON.stringify(teamDetails));
         console.log(teamDetails, teamSize, teamName, domain, abstract);
-        // const res = await axios.post("/register", form, {
-        //     headers: {
-        //         "Content-Type": "multipart/form-data"
-        //     }
-        // }).catch((err) => {
-        //     console.log(err);
-        //     alert("something went wrong ;) please try again later");
-        //     navigate("/");
-        // });
-        // if (res.data.status === 200) {
-        //     alert("We have received your abstract. All the best :)");
-        //     navigate("/");
-        // }
+        const res = await axios.post("/register", form, {
+            headers: {
+                "Content-Type": "multipart/form-data"
+            }
+        }).catch((err) => {
+            console.log(err);
+            alert("something went wrong ;) please try again later");
+            navigate("/");
+        });
+        if (res.data.status === 200) {
+            alert("We have received your abstract. All the best :)");
+            navigate("/");
+        }
         setLoading(false);
     }
 
@@ -117,7 +119,7 @@ function RegisterMainPage() {
 
     return (
         <userContext.Provider value={{ teamSize: teamSize }}>
-            <div>
+            <div className='content_div1' style={{'background-image':'../assets/images/likith/abstract-textured-backgound.jpg'}}>
                 <div className="form-box-container">
                     <div className="form-progress-bar"></div>
                     <div className="form-box">
@@ -126,25 +128,26 @@ function RegisterMainPage() {
                         </div>
                         <div className="form-body">
                             {PageDisplay()}
-                        </div>
-                        <div className="form-footer">
-                            <button
-                                disabled={page === 0}
-                                onClick={() => {
-                                    setPage((currPage) => currPage - 1)
-                                }}
-                                className='button_register a '>Prev</button>
-                            {
-                                !(page === titles.length - 1) && <button
-                                    disabled={page === titles.length - 1}
-                                    onClick={handleNext}
-                                className='button_register a'>Next</button>}
-                            {
-                                (page === titles.length - 1) && <button
-                                    onClick={handleNext}
-                                    disabled={loading}
-                                    className='button_register a'>Submit</button>
-                            }
+
+                            <div className="form-footer">
+                                <button
+                                    disabled={page === 0}
+                                    onClick={() => {
+                                        setPage((currPage) => currPage - 1)
+                                    }}
+                                    className='button_register a '>Prev</button>
+                                {
+                                    !(page === titles.length - 1) && <button
+                                        disabled={page === titles.length - 1}
+                                        onClick={handleNext}
+                                        className='button_register a'>Next</button>}
+                                {
+                                    (page === titles.length - 1) && <button
+                                        onClick={handleNext}
+                                        disabled={loading}
+                                        className='button_register a'>Submit</button>
+                                }
+                            </div>
                         </div>
                     </div>
                 </div>

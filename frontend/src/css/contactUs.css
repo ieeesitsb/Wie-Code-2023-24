@@ -312,9 +312,19 @@
   display: flex;
   flex-direction: column-reverse;
   width: 100%;
+
 }
 .middle-left,.middle-right{
   width: 100%;
+  margin: 1rem 0rem;
+  padding: 1rem 0rem;
+}
+
+.input-one, .input-two, .textarea-one{
+  margin: 2rem 0rem;
+}
+.middle-middle input{
+  margin: 2rem 0rem;
 }
 .contact-section{
   display: flex;
@@ -373,6 +383,9 @@
   .textarea-one{
     margin-bottom: 5%;
   } */
+  .input-one, .input-two, .textarea-one{
+    margin: 2rem 0rem;
+  }
   .contact-section{
     display: flex;
     flex-direction: column;
