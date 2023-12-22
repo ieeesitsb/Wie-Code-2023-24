@@ -16,15 +16,21 @@ import Fade from 'react-reveal/Fade';
 import Pulse from 'react-reveal/Pulse';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { useNavigate } from 'react-router-dom'
 function HeroSection() {
   useEffect(() => {
     Aos.init({ duration: 3000 });
-}, []);
+  }, []);
+
+  const navigate = useNavigate();
+  const handleRegister = () => {
+    navigate('/register')
+  }
   return (
     <div>
       <div className='hero-main-container'>
         <div className='hero-text-container'>
-          <span className='hero-text-container organized-text' ><span>&nbsp;IEEE SIT SB presents&nbsp;</span> </span>
+          <span className='hero-text-container organized-text' ><span>&nbsp;WIE IEEE SIT SB presents&nbsp;</span> </span>
           <span className='hero-text-container hero-wie-code' data-attr="&nbsp;WIE CODE&nbsp;"><span>&nbsp;WIE CODE &nbsp;</span>  </span>
           <span className='hero-text-container hero-year' data-info="&nbsp;2023&nbsp;"><span>&nbsp; 2023-24 &nbsp;</span> </span>
           {/* <span className='hero-text-container organized-text' ><span>&nbsp;Organized by IEEE SIT SB&nbsp;</span> </span> */}
@@ -41,28 +47,31 @@ function HeroSection() {
 
       {/* Theme of hackathon */}
       <div className='idea' >
-      <Fade left>
+        <Fade left>
 
-        <div className='idea-img-container'>
-          {/* <img src={IdeaImage}></img> */}
-          {/* <img src={DetailsLogo}/> */}
-          <img src={ThemeImage} />
+          <div className='idea-img-container'>
+            {/* <img src={IdeaImage}></img> */}
+            {/* <img src={DetailsLogo}/> */}
+            <img src={ThemeImage} />
 
-        </div>
+          </div>
         </Fade>
         <div className='idea-text-container'>
           <Fade right>
-          <span className='idea-theme-title'>THEME</span>
-          <span className='idea-theme-desc'>Unleash your creativity for a purpose! This year's hackathon theme is </span>
-          <span className='idea-theme'>"INNOVATE FOR IMPACT"</span>
+            <span className='idea-theme-title'>THEME</span>
+            <span className='idea-theme-desc'>Unleash your creativity for a purpose! This year's hackathon theme is </span>
+            <span className='idea-theme'>"INNOVATE FOR IMPACT"</span>
+            <div>
+              <button className='expl-btn-2' onClick={handleRegister}>REGISTER</button>
+            </div>
           </Fade>
         </div>
       </div>
 
       {/* Details of the event  */}
 
-      <div className='event-details' data-aos = "zoom-in">
-      {/* <Pulse> */}
+      <div className='event-details' data-aos="zoom-in">
+        {/* <Pulse> */}
         <span className='event-title'>DETAILS OF <span style={{ color: "#00F2FF" }}> WIE</span>  CODE 2023-24</span>
         <div className='event-det-first'>
           <div className='event-det-date'>
@@ -91,7 +100,7 @@ function HeroSection() {
             <span className='event-desc'> Siddaganga Institute of Technology,Tumakuru</span>
           </div>
         </div>
-      {/* </Pulse> */}
+        {/* </Pulse> */}
       </div>
     </div>
   )

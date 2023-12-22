@@ -14,14 +14,14 @@ export const RegisterPage2 = (props) => {
                         <label className='label'>Domain :</label>
                         <select name="domain" id="size" required onChange={(e)=>props.setDomain(e.target.value)}>       
                             <option value="" hidden>Select</option>
-                            <option value="Health Care">Healthcare</option>
-                            <option value="Education">Smart Education</option>
-                            <option value="Industry">Urbanization</option>
-                            <option value="Industry">E-Commerce</option>
-                            <option value="Industry">Fintech</option>
+                            <option value="Smart-City-and-Urban-Innovation">Smart City and Urban Innovation</option>
+                            <option value="Health-Care<">Health Care</option>
+                            <option value="Environment">Environment</option>
                             <option value="Agriculture">Agriculture</option>
-                            <option value="Agriculture">Environment</option>
-                            <option value="Miscellaneous">Open Innovation</option></select>
+                            <option value="Economic-Development">Economic Development</option>
+                            <option value="Society-and-Communityure">Society and Community</option>
+                            <option value="Education">Education</option>
+                            <option value="Open-Innovation">Open Innovation</option></select>
 
                         <label className='abstract-text'> Upload File :</label>
                         <input required type="file" onChange={(e)=>props.setAbstract(e.target.files[0])}/>

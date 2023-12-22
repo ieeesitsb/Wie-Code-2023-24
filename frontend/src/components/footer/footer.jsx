@@ -21,7 +21,7 @@ export default function Footer() {
 
 
             </div>
-            <center className='footer-p' style={{"color":"#b7b4b4","marginTop":"2vh"}}>All rights reserved &#169; IdEEEas, IEEE SIT SB</center>
+            <center className='footer-p' style={{"color":"#b7b4b4","marginTop":"2vh"}}>All rights reserved &#169; WIE CODE, IEEE SIT SB</center>
 
             </div>
     );

@@ -94,12 +94,12 @@ function contactUs() {
         </div>
         <div className='name3'>
           <span className='namess'>Chandana R</span>
-          <span className='designation'>Wie chairman</span>
+          <span className='designation'>WIE Chairman</span>
           <span className='contact-number'>7975720929</span>
         </div>
         <div className='name4'>
           <span className='namess'>Nanditha B U</span>
-          <span className='designation'>Wie Vice Chairman</span>
+          <span className='designation'>WIE Vice Chairman</span>
           <span className='contact-number'>9591619331</span>
         </div>
       </div>

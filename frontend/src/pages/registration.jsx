@@ -38,7 +38,7 @@ function Registration(props) {
             </select>
             <text>Abstract Format(to be followed strictly)</text>
             <a href={Abstract} download="Abstract.docx">CLick here to download Abstract Format  <span>Click here</span></a>
-            <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format  <span>Click here</span></a>
+            {/* <a href={Abstract_ppt} download="PPT_formate.pptx">CLick here to download PPT Format  <span>Click here</span></a> */}
             {/* <button className='a' onClick={handleClickNext()}>Next</button> */}
           </form>
 

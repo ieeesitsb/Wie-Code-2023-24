@@ -16,7 +16,7 @@ const Rules = () => {
                         The Hackathon is for 12 hours.
                     </li>
                     <li>
-                        Online registrations will be closed on 19th December 2023.
+                        Online registrations will be closed on 20th December 2023.
                     </li>
                     <li>
                         Team should either have 2 members (all girls team). 3 (min 1 girl in the team) or 4 members (min 2 girls in the team).
@@ -45,11 +45,11 @@ const Rules = () => {
                     There will be a limit on the number of entries accepted for each problem statement.
                     </li>
                     <li>
-                    We would consider the first 6 entries for each problem statements for the first round of screening. The WIE Code will begin on 23st December
-                    2023 from 8:00 AM and will end at 23st December 2023 8:00 PM. Internet facility will be provided for 12 hours.
+                    We would consider the first 6 entries for each problem statements for the first round of screening. The WIE Code will begin on 23rd December
+                    2023 from 8:00 AM and will end at 23rd December 2023 8:00 PM. Internet facility will be provided for 12 hours.
                     </li>
                     <li>
-                    Reporting time will be 7:00 am.
+                    Reporting time will be 7:00 AM.
                     </li>
                     <li>
                     All communication will be sent to your primary email submitted at the time of registration. Certificate for participation will be provided to all
